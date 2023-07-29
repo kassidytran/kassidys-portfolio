@@ -8,13 +8,13 @@ body {
   padding: 0;
 }
 
-h1, h2, h3 {
+h1, h2, h3, h4 {
   font-family: Lexend, sans-serif;
   font-weight: 400;
   color: #033962;
 }
 
-h4, h5, h6 {
+h5, h6 {
   font-family: Inter, sans-serif;
 }
 
@@ -88,7 +88,7 @@ header nav .logo a:hover {
   flex-flow: column;
   gap: 50px;
 }
-.work-container h1 {
+.work-container h2 {
   letter-spacing: 3px;
   font-size: 20px;
 }
@@ -100,7 +100,7 @@ header nav .logo a:hover {
 }
 .work-container .cs-list .cs-container {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
 }
 .work-container .cs-list .cs-container .cs-description {
   display: flex;
@@ -108,21 +108,29 @@ header nav .logo a:hover {
   max-width: 40%;
   margin-right: auto;
 }
-.work-container .cs-list .cs-container .cs-description h2 {
+.work-container .cs-list .cs-container .cs-description h3 {
   font-family: Fira Mono, monospace;
   font-size: 16px;
   margin-bottom: 10px;
 }
-.work-container .cs-list .cs-container .cs-description h3 {
+.work-container .cs-list .cs-container .cs-description h4 {
   font-size: 28px;
   margin-top: 10px;
 }
 .work-container .cs-list .cs-container .cs-description p {
   margin-top: 0;
 }
-.work-container .cs-list .cs-container img {
+.work-container .cs-list .cs-container a {
   max-width: 50%;
+}
+.work-container .cs-list .cs-container a .grow {
+  max-width: 100%;
   border-radius: 10px;
+  transition: all 0.2s ease-in-out;
+}
+.work-container .cs-list .cs-container a .grow:hover {
+  transform: scale(1.05);
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 .work-container .cs-list .cs-container .button {
   display: flex;
@@ -179,7 +187,7 @@ article .img-container img {
 }
 article .img-container-uinv {
   padding: 60px 200px;
-  background-color: #D4E6F1;
+  background-color: #FFEFD2;
   display: flex;
   justify-content: center;
 }
@@ -217,6 +225,13 @@ article .cs-section-a {
 }
 article .cs-section-a p {
   font-size: 20px;
+}
+article .cs-section-a a {
+  color: #033962;
+  text-decoration: underline;
+}
+article .cs-section-a a:hover {
+  color: #FFA600;
 }
 article .cs-section-a li {
   font-family: Inter, sans-serif;
@@ -272,6 +287,11 @@ article .cs-section-b li {
 }
 article .cs-section-b strong {
   font-weight: 500;
+}
+article .cs-section-b h3 {
+  font-family: Inter, sans-serif;
+  font-weight: 500;
+  text-decoration: underline;
 }
 article .cs-section-b .cs-img-container {
   padding: 40px 0px;
@@ -329,4 +349,62 @@ footer ul a:hover {
 footer ul a:active {
   border: 2px dashed #033962;
   border-radius: 5px;
+}
+
+.about-intro {
+  padding: 60px 200px;
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  gap: 100px;
+}
+.about-intro img {
+  max-width: 250px;
+}
+.about-intro h1 {
+  font-size: 42px;
+}
+
+.about-details {
+  padding: 60px 200px;
+  display: flex;
+  gap: 100px;
+  justify-content: space-evenly;
+}
+.about-details .skills-and-interests {
+  max-width: 50%;
+}
+.about-details .education {
+  max-width: 50%;
+}
+.about-details .education .uci {
+  margin-bottom: 20px;
+}
+.about-details .education .uci p {
+  padding: 0;
+  margin: 0;
+}
+.about-details .education .ucla p {
+  padding: 0;
+  margin: 0;
+}
+
+.contact-info {
+  padding: 60px 200px;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+.contact-info h2 a {
+  color: #FFA600;
+  text-decoration: none;
+  border: 1px solid transparent;
+}
+.contact-info h2 a:hover {
+  border: 1px dashed #FFA600;
+  border-radius: 5px;
+}
+
+.about-more {
+  padding: 60px 200px;
 }/*# sourceMappingURL=styles.css.map */

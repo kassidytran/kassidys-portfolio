@@ -3,6 +3,7 @@ $primaryColor : #D4E6F1;
 $secondaryColor: #033962;
 $tertiaryColor: #B4D8E7;
 $accentColor: #FFA600;
+$accentColorLight: #FFEFD2;
 $lightColor: #fafafa;
 $textColor: #033962;
 $primaryFont: Inter, sans-serif;
@@ -18,12 +19,12 @@ body {
     margin: 0;
     padding: 0;
 }
-h1, h2, h3 {
+h1, h2, h3, h4 {
     font-family: $headerFont;
     font-weight: 400;
     color: $textColor;
 }
-h4, h5, h6 {
+h5, h6 {
     font-family: $primaryFont;
 }
 p {
@@ -101,7 +102,7 @@ header {
     flex-flow: column;
     gap: 50px;
     
-    h1 {
+    h2 {
         letter-spacing: 3px;
         font-size: 20px;
     }
@@ -115,15 +116,15 @@ header {
 
         .cs-container {
             display: flex;
-            align-items: center;
+            align-items: flex-start;
           
             .cs-description {
-                h2 {
+                h3 {
                     font-family: $monospace;
                     font-size: 16px;
                     margin-bottom: 10px;
                 }
-                h3 {
+                h4 {
                     font-size: 28px;
                     margin-top: 10px;
                 }
@@ -135,11 +136,19 @@ header {
                 max-width: 40%;
                 margin-right: auto;
             }
-        
-            img {
+            a {
                 max-width: 50%;
-                border-radius: 10px;
+                .grow {
+                    max-width: 100%;
+                    border-radius: 10px;
+                    transition: all .2s ease-in-out;
+                }
+                .grow:hover {
+                    transform: scale(1.05);
+                    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+                }
             }
+            
             .button {
                 display: flex;
                 margin-top: 40px;
@@ -171,7 +180,6 @@ header {
 }
 article {
     .cs-title {
-
         padding: $sectionPadding;
         h1 {
             font-size: 48px;
@@ -181,11 +189,9 @@ article {
             font-size: 24px;
             font-family: $primaryFont;
             font-weight: 300;
-            margin-bottom: 50px;
-            
+            margin-bottom: 50px; 
         }
         h3 {
-            
             font-family: $monospace;
         }
     }
@@ -201,7 +207,7 @@ article {
     }
     .img-container-uinv {
         padding: $sectionPadding;
-        background-color: $primaryColor;
+        background-color: $accentColorLight;
         display: flex;
         justify-content: center;
         img {
@@ -240,6 +246,13 @@ article {
 
         p {
             font-size: 20px;
+        }
+        a {
+            color: $secondaryColor;
+            text-decoration: underline;
+        }
+        a:hover {
+            color: $accentColor;
         }
         li {
             font-family: $primaryFont;
@@ -300,6 +313,11 @@ article {
         }
         strong {
             font-weight: 500;
+        }
+        h3 {
+            font-family: $primaryFont;
+            font-weight: 500;
+            text-decoration: underline;
         }
         .cs-img-container {
             padding: 40px 0px;
@@ -373,3 +391,63 @@ footer {
     }
 }
 
+.about-intro {
+    padding: $sectionPadding;
+        display: flex;
+        flex-flow: row;
+        align-items: center;
+        gap: 100px;
+        img {
+            max-width: 250px;
+        }
+        h1 {
+            font-size: 42px;
+        }
+}
+
+.about-details {
+    padding: $sectionPadding;
+    display: flex;
+    gap: 100px;
+    justify-content: space-evenly;
+    .skills-and-interests {
+        max-width: 50%;
+    }
+    .education {
+        max-width: 50%;
+        .uci {
+            p {
+                padding: 0;
+                margin: 0;
+            }
+            margin-bottom: 20px;
+        }
+        .ucla {
+            p {
+                padding: 0;
+                margin: 0;
+            }
+        }
+    }
+}
+
+.contact-info {
+    padding: $sectionPadding;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    h2 {
+        a {
+            color: $accentColor;
+            text-decoration: none;
+            border: 1px solid transparent;
+        }
+        a:hover {
+            border: 1px dashed $accentColor;
+            border-radius: 5px;
+        }
+    }
+}
+.about-more {
+    padding: $sectionPadding;
+}
