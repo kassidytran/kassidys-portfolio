@@ -1,0 +1,375 @@
+/* variables */
+$primaryColor : #D4E6F1;
+$secondaryColor: #033962;
+$tertiaryColor: #B4D8E7;
+$accentColor: #FFA600;
+$lightColor: #fafafa;
+$textColor: #033962;
+$primaryFont: Inter, sans-serif;
+$headerFont: Lexend, sans-serif;
+$monospace: Fira Mono, monospace;
+$sectionPadding: 60px 200px;
+$border: 1px solid black;
+
+html {
+    scroll-behavior: smooth;
+}
+body {
+    margin: 0;
+    padding: 0;
+}
+h1, h2, h3 {
+    font-family: $headerFont;
+    font-weight: 400;
+    color: $textColor;
+}
+h4, h5, h6 {
+    font-family: $primaryFont;
+}
+p {
+    font-family: $primaryFont;
+    color: $textColor;
+    font-size: 18px;
+    font-weight: 300;
+}
+header {
+    padding: 20px 100px;
+    background-color: $lightColor;
+    nav {
+        ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            display: flex;
+            flex-flow: row;
+            justify-content: flex-end;
+            align-items: center;
+            li {
+                display: inline-block;
+                top: 20px;
+            }
+        }
+        a {
+            color: $textColor;
+            text-decoration: none;
+            margin-top: 120px; 
+            margin-left: 40px; 
+            margin-right: 40px;
+            padding: 12px 16px;
+            font-family: $monospace;
+            border: 2px solid transparent;
+        }
+        a:hover {
+            border: 2px dashed $secondaryColor;
+            border-radius: 5px;
+        }
+        a:active {
+            border: 2px dashed $secondaryColor;
+            border-radius: 5px;
+        }
+        .logo {
+            margin-right: auto;
+            a:hover {
+                border: 2px solid transparent;
+            }
+        }
+    }
+}
+
+
+
+
+
+.intro-container {
+    padding: $sectionPadding;
+
+    h1 {
+        font-size: 48px;
+    }
+    h2 {
+        font-family: $primaryFont;
+        font-weight: 300;
+        font-size: 32px;
+    }
+    img {
+        max-width: 25%;
+    }
+}
+.work-container {
+    padding: $sectionPadding;
+    display: flex;
+    flex-flow: column;
+    gap: 50px;
+    
+    h1 {
+        letter-spacing: 3px;
+        font-size: 20px;
+    }
+
+    .cs-list {
+        gap: 100px;
+        display: flex;
+        flex-flow: column;
+        flex-flow: column;
+     
+
+        .cs-container {
+            display: flex;
+            align-items: center;
+          
+            .cs-description {
+                h2 {
+                    font-family: $monospace;
+                    font-size: 16px;
+                    margin-bottom: 10px;
+                }
+                h3 {
+                    font-size: 28px;
+                    margin-top: 10px;
+                }
+                p {
+                    margin-top: 0;
+                }
+                display: flex;
+                flex-flow: column;
+                max-width: 40%;
+                margin-right: auto;
+            }
+        
+            img {
+                max-width: 50%;
+                border-radius: 10px;
+            }
+            .button {
+                display: flex;
+                margin-top: 40px;
+                a {
+                    border: 2px solid $accentColor;
+                    background-color: $accentColor;
+                    color: $lightColor;
+                    font-family: $monospace;
+                    font-size: 16px;
+                    text-decoration: none;
+                    display: block;
+                    border-radius: 5px;
+                    padding: 12px 20px;
+                }
+                a:hover {
+                    border: 2px dashed $accentColor;
+                    background-color: transparent;
+                    color: $accentColor;
+                    font-family: $monospace;
+                    font-size: 16px;
+                    text-decoration: none;
+                    display: block;
+                    border-radius: 5px;
+                    padding: 12px 20px;
+                }
+            }
+        }
+    }
+}
+article {
+    .cs-title {
+
+        padding: $sectionPadding;
+        h1 {
+            font-size: 48px;
+            margin-bottom: 0;
+        }
+        h2 {
+            font-size: 24px;
+            font-family: $primaryFont;
+            font-weight: 300;
+            margin-bottom: 50px;
+            
+        }
+        h3 {
+            
+            font-family: $monospace;
+        }
+    }
+    .img-container {
+        padding: $sectionPadding;
+        background-color: $primaryColor;
+        display: flex;
+        justify-content: center;
+        gap: 50px;  
+        img {
+            max-width: 20%;
+        }
+    }
+    .img-container-uinv {
+        padding: $sectionPadding;
+        background-color: $primaryColor;
+        display: flex;
+        justify-content: center;
+        img {
+            max-width: 120%;
+        }
+    }
+    .cs-overview {
+        padding: $sectionPadding;
+        h2 {
+            
+            font-size: 24px;
+        }
+        p {
+            font-size: 20px;
+        }
+        .cs-details-container {
+            display: flex;
+            justify-content: flex-start;
+            li {
+                font-family: $primaryFont;
+                font-size: 20px;
+                font-weight: 300;
+                color: $textColor;
+            }
+            .roles-responsibilities {
+                margin-right: auto;
+            }
+            .tools {
+                margin-right: auto;
+            }
+        }
+    }
+    .cs-section-a {
+        background-color: $lightColor;
+        padding: $sectionPadding;
+
+        p {
+            font-size: 20px;
+        }
+        li {
+            font-family: $primaryFont;
+            font-weight: 300;
+            font-size: 20px;
+            color: $textColor;
+        }
+        .callout {
+            border-left: 3px solid $accentColor;
+            font-size: 28px;
+            margin: 50px;
+            padding-left: 20px;
+        }
+        h3 {
+            font-family: $primaryFont;
+            font-weight: 500;
+            text-decoration: underline;
+        }
+        blockquote {
+            font-size: 20px;
+            color: $textColor;
+            font-family: $headerFont;
+            margin: 40px;
+            
+        }
+        .cs-img-container {
+            padding: 40px 0px;
+            display: flex;
+          
+            justify-content: space-evenly;
+            figure {
+                img {
+                    max-width: 100%;
+                    border-radius: 5px;
+                }
+                figcaption {
+                    font-family: $monospace;
+                    background-color: $primaryColor;
+                    color: $textColor;
+                    text-align: center;
+                }
+            }
+        }
+    }
+    .cs-section-b {
+        padding: $sectionPadding;
+        display: flex;
+        flex-flow: column;
+
+        p {
+            font-size: 20px;
+        }
+        li {
+            font-family: $primaryFont;
+            font-weight: 300;
+            font-size: 20px;
+            color: $textColor;
+        }
+        strong {
+            font-weight: 500;
+        }
+        .cs-img-container {
+            padding: 40px 0px;
+            display: flex;
+            justify-content: space-evenly;
+            figure {
+                img {
+                    max-width: 100%;
+                    border-radius: 5px;
+                }
+                figcaption {
+                    font-family: $monospace;
+                    background-color: $primaryColor;
+                    color: $textColor;
+                    text-align: center;
+                }
+            }
+        }
+        .callout {
+            border-left: 3px solid $accentColor;
+            font-size: 28px;
+            margin: 50px;
+            padding-left: 20px;
+        }
+    }
+   
+}
+
+
+
+
+
+
+
+footer {
+    background-color: $lightColor;
+    padding: 50px 100px 100px 60px;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    text-align: center;
+
+    h1 {
+        font-size: 32px;
+    }
+    ul { 
+        padding: 0;
+        margin: 0;
+        list-style: none;
+
+        li {
+            padding: 12px 20px;
+            display: inline-block;
+        }
+
+        a {
+            font-family: $monospace;
+            text-decoration: none;
+            padding: 12px 20px;
+            border: 2px solid transparent;
+            color: $textColor;
+        }
+        a:hover {
+            border: 2px dashed $secondaryColor;
+            border-radius: 5px;
+        }
+        a:active {
+            border: 2px dashed $secondaryColor;
+            border-radius: 5px;
+        }
+    }
+}
+

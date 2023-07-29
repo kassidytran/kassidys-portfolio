@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Mono:wght@400;500;700&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Lexend:wght@100;200;300;400;500;600;700;800;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <title>Kassidy Tran</title>
+</head>
+<body>
+    <header id="header">
+        <nav>
+            <ul>
+                <li class="logo"><a href="index.html"><img src="media/index/logo.svg"></a></li>
+                <li><a href="index.html">Work</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="https://drive.google.com/file/d/14IZE6dzFuSuFm6ZbBCAU_dDXZdw4XfV4/view?usp=sharing">Resume</a></li>
+                <li><a href="https://www.linkedin.com/in/kassidy-tran/">LinkedIn</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <article>
+        <section class="cs-title">
+            <h1>Carson: Nevada’s Unemployment Virtual Assistant</h1>
+            <h2>Exploring how AI can help the unemployed</h2>
+            <h3>UX & Visual Design</h3>
+            <h3>March - April 2023</h3>
+        </section>
+
+        <section class="img-container-uinv">
+            <img src="media/uinv-chatbot/uinv-article-cover.png">
+        </section>
+
+        <section class="cs-overview">
+            <h2>Overview</h1>
+            <p>In March of 2023, my team of four UX/UI design students were tasked with redesigning the Unemployment Insurance of Nevada (UINV) website. My team designed an AI chat bot to replace the primary navigation of the UINV website and assist users in navigating the site as well as provide user support. This project spanned 6 weeks, starting off with a one week design sprint and ending with a presentation of a high-fidelity, responsive prototype. </p>
+            <div class="cs-details-container">
+                <div class="roles-responsibilities">
+                    <h2>Roles & Responsibilities</h2>
+                    <ul>
+                        <li>Drafting a user journey and storyboard</li>
+                        <li>Empathize with users based on user interviews and secondary research insights</li>
+                        <li>Conducting a competitive analysis on other website chat bots</li>
+                        <li>Using ChatGPT to iterate chat bot responses with varying tones, vocabulary, and amount of information</li>
+                        <li>Planning and overseeing A/B testing for user experiences</li>
+                    </ul>
+                </div>
+                <div class="tools">
+                    <h2>Tools</h2>
+                    <ul>
+                        <li>Figma</li>
+                        <li>ChatGPT</li>
+                        <li>Google Workspace</li>
+                        <li>Zoom (for user interviews and communication)</li>
+                        <li>Slack (for team communciation)</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="cs-section-a">
+            <h2>Starting off with a design sprint</h2>
+            <p>To kickstart our design process, we started off with a one-week design sprint. In order to gain insight into the user’s perspective, we jumped straight into a UI assessment of the <a href="https://ui.nv.gov/css.html">Nevada Unemployment Insurance Claim Filing System (UINV) website</a>, taking note of these major usability issues:</p>
+            <ul>
+                <li>Overwhelming amount of links and texts lead to cognitive overload</li>
+                <li>Little hierarchal distinction between content makes the site difficult to navigate</li>
+                <li>Text is small and colors are a harsh contrast to the background, decreasing legibility</li>
+                <li>Dull colors that present an unwelcoming and cold user experience </li>
+            </ul>
+            <div class="cs-img-container">
+                <figure>
+                    <img src="media/uinv-chatbot/uinv-home.png">
+                    <figcaption>Current user interface for the UINV website</figcaption>
+                </figure>
+            </div>
+            <p>To ensure our assessment of the problems we found were not biased, we interviewed two users that had previously experienced unemployment and have filed for unemployment to conduct a usability test of the website. Both users interviewed stated that when they were stressed and filing for unemployment, their immediate wish was to talk to someone to help them complete the unemployment insurance claim process.  </p>
+            <p>This user feedback inspired our design goals. We aimed to improve the navigation of the website and create a more welcoming atmosphere to recently unemployed users, who are already dealing with high amounts of stress. We then drafted a user persona and problem statement to represent our target user demographic. </p>
+            <p class="callout">“I am a former warehouse manufacturing business employee. I am trying to apply for unemployment benefits for some stability and the ability to financially support my family, while looking for a new job, but I’m not sure what unemployment benefits I am eligible for. I’m dreading applying because I’m expecting the application process to be long and confusing, because I have never had to apply for unemployment before, which makes me feel overwhelmed!”</p>
+            <p>This user feedback inspired our design goals. We aimed to improve the navigation of the website and create a more welcoming atmosphere to recently unemployed users, who are already dealing with high amounts of stress. We then drafted a user persona and problem statement to represent our target user demographic. </p>
+            <p>While conducting usability testing with a low-fidelity prototype, we asked users how they might interact with the chatbot to file a claim. Results revealed that users were able to effectively use the chat bot to complete their task, and some users noted that a chat bot was more effective in navigating the website and seeking help if they needed assistance after call center hours or if phone lines were busy. </p>
+
+        </section>
+
+        <section class="cs-section-b">
+            <h2>Creating a chatbot conversation flow</h2>
+            <p>We now needed to address the issue of restructuring the primary and secondary navigation on the website. A content inventory and audit was conducted and we realized we needed to address a few major issues:</p>
+            <ul>
+                <li>Clarify process to file a claim</li>
+                <li>Rename document titles with user-friendly language</li>
+                <li>Content and typographic hierarchy to emphasize important content</li>
+                <li>Website should include a reliable form of navigation</li>
+            </ul>
+            <div class="cs-img-container">
+                <figure>
+                    <img src="media/yelp-community/archetype-user-a.png">
+                    <figcaption>User A - Viewers</figcaption>
+                </figure>
+                <figure>
+                    <img src="media/yelp-community/archetype-user-b.png">
+                    <figcaption>User B - Content Creators</figcaption>
+                </figure>
+            </div>
+            <p>With these assumptions, we dove into user research and interviews, asking five social media users about their behavioral habits when traveling and using social media apps, as well as their attitudes towards our concept.</p>
+        </section>
+
+        <section class="cs-section-a">
+            <h2>Insights from user research</h2>
+            <h3>User Interviews</h3>
+            <p>Research showed some unexpected results. Users pointed out three major issues with our concept:</p>
+            <ul>
+                <li>
+                    <p>Users (particularly female) were highly concerned about safety and discussed that they aren’t willing to explore new places without their own prior research, nor are they willing to post visual information about their current location on the internet</p>
+                    <blockquote>"I don't really travel or check out different places solo…<span style="background-color:#D4E6F1">obviously safety is one of the biggest concerns</span> for most women…." <i>(Female user, age 22)</i></blockquote>
+                </li>
+                <li>
+                    <p>Users are unlikely to trust any recommendations they see online unless they know the original reviewer is someone who shares similar interests as them</p>
+                    <blockquote>"I typically <span style="background-color:#D4E6F1">don't just like see one video from someone and then immediately trust</span> their recommendations." <i>(Female user, age 23)</i></blockquote>
+                </li>
+                <li>
+                    <p>Many solutions for this problem space already exist in the form of well established travel sites and social media algorithms </p>
+                    <blockquote>"<span style="background-color:#D4E6F1">I downloaded Yelp</span> and I was searching for popular places in…Irvine, and we ended up going to a Korean barbecue spot. And experience was actually pretty good…" <i>(Male user, age 19)</i></blockquote>
+                </li>
+            </ul>
+            <h3>Survey and secondary user research</h3>
+            <p>On top of feedback from user interviews, our survey results also showed that Yelp was our users’ most commonly used review app. We conducted a cognitive walkthrough of Yelp and discovered that although Yelp had exisiting social features, they were difficult to navigate and hard to find. </p>
+            <p>Additional secondary research also revealed: </p>
+            <ul>
+                <li>The majority of Yelp’s current user base is age 35 or older</li>
+                <li>Younger users, particularly Gen Z users, are less likely to trust reviews from strangers online, but are more willing to trust “word of mouth” recommendations</li>
+            </ul>
+        </section>
+
+        <section class="cs-section-b">
+            <h2>Redefining the problem</h2>
+            <p>Realizing our original idea wasn’t actually solving any problems, we had to backtrack to redefine the problem space. </p>
+            <p>All insights gained from our primary research were sorted in an affinity map, where we discovered that the most notable concerns of users when traveling or when using social media to purchase products or visit new locations are <strong>trust, sharing a close relationship with others, and conducting prior research</strong>. </p>
+            <div class="cs-img-container">
+                <figure>
+                    <img src="media/yelp-community/affinity-map.png">
+                    <figcaption>Affinity map depicting major themes identified during user insight analysis</figcaption>
+                </figure>
+            </div>
+            <p>We realized that the actual problem lies more in the <em>trustworthiness</em> of recommendations rather than the <em>need</em> for recommendations. Our iterated problem statement reads:</p>
+            <p class="callout">How might we create a trust-based community that sets appropriate expectations and reduces the time users spend on prior research on new locations?</p>
+            <p>User insights indicated that our behavioral archetypes also needed updating.</p>
+            <div class="cs-img-container">
+                <figure>
+                    <img src="media/yelp-community/archetype-user-a-iterated.png">
+                    <figcaption>User A - Viewers</figcaption>
+                </figure>
+                <figure>
+                    <img src="media/yelp-community/archetype-user-b-iterated.png">
+                    <figcaption>User B - Yelp Compnay</figcaption>
+                </figure>
+            </div>
+            <p>We also developed a POV statement in order to understand the root motivations of the user and how we might provide them with what they need: </p>
+            <p class="callout">A new user who is unfamiliar with using social platforms needs a more convenient method of finding trustworthy reviews for local restaurants and businesses, so that they can set proper expectations when visiting a new location.</p>
+            <p>In this POV statement, we are able to consider:</p>
+            <ul>
+                <li>What kind of user - a user who isn’t used to using Yelp or social media apps</li>
+                <li>What the user needs - a simplified interface and user flow so they don’t get confused</li>
+                <li>What the user values - trustworthy reviews</li>
+                <li>What the user wants - proper expectations before visiting to a new location, decreased risk of disappointment</li>
+            </ul>
+        </section>
+
+        <section class="cs-section-a">
+            <h2>Ideating the solution</h2>
+            <p>To ideate solutions for improving Yelp’s social platform, we conducted a group rapid brainstorming session using a creative matrix, organized by age groups and themes we wanted to address based on our cognitive walkthrough. </p>
+            <p>After everyone listed out their ideas on how we might improve the experience for each age group, we discussed our results and noted three major features we wanted to include: </p>
+            <ul>
+                <li>Easier access to activity page from home screen so users don’t need to actively search through the app to see their social activity
+                </li>
+                <li>Improve user experience when finding/adding friends to improve interactions between users</li>
+                <li>Provide options for profile privacy so users can control who can see the content they post</li>
+            </ul>
+        </section>
+
+        <section class="cs-section-b">
+            <h2>Mapping the user’s journey</h2>
+            <p>Finally before building a prototype, we wanted to empathize with the user and imagine how they might interact with this design. To do so, we created a user journey map that follows one user through a scenario in which they might use the updated social feature: </p>
+            <div class="cs-img-container">
+                <figure>
+                    <img src="media/yelp-community/user-journey-yelp.png">
+                    <figcaption>A user journey map showcasing the expected user experience of our newly designed feature</figcaption>
+                </figure>
+            </div>
+        </section>
+
+        <section class="cs-section-a">
+            <h2>Creating a mid-fidelity prototype</h2>
+            <h3>Reorganizing the menu bar content</h3>
+            <p>For this project we created low-fidelity wireframes to visualize a new layout for our activity page, and to map out a new user flow for adding other users and accessing the activity feed. To do this, we re-organized the bottom navigation menu, replacing the “More” menu item with a “Community” menu item. The contents under the previous “More” menu item were moved to the profile page, or the “Me” menu item.  </p>
+            <div class="cs-img-container">
+                <figure>
+                    <img src="media/yelp-community/og-menu-bar.png">
+                    <figcaption>Original Yelp bottom navigation menu</figcaption>
+                </figure>
+                <figure>
+                    <img src="media/yelp-community/redesigned-menu-bar.png">
+                    <figcaption>Redesign - replacing "More" with "Community"</figcaption>
+                </figure>
+            </div>
+            <h3>Designing a new community page</h3>
+            <p>Our new “Community” page was divided into two sections: an “Activity” section and “Talk” section. The Activity section is where a user can view their friends’ reviews, check-ins, and social activity, while the “Talk” section brings out an existing Yelp social feature that had been previously located at the bottom of the “More” page, where users can join forums to talk about different topics. </p>
+            <div class="cs-img-container">
+                <figure>
+                    <img src="media/yelp-community/activity.png">
+                    <figcaption>Activity</figcaption>
+                </figure>
+                <figure>
+                    <img src="media/yelp-community/talk.png">
+                    <figcaption>Yelp Talk</figcaption>
+                </figure>
+            </div>
+            <h3>Simplifyng the user flow for adding friends</h3>
+            <p>The user flow to add friends was also modified to include less clicks. Now, each user has their own unique username. Users can add friends by going to the profile page and clicking on the icon in the upper right corner of the screen, then search their friends’ usernames to add them. </p>
+            <div class="cs-img-container">
+                <figure>
+                    <img src="media/yelp-community/profile.png">
+                    <figcaption>Redesigned user profile - including a more easily accessible path to add friends</figcaption>
+                </figure>
+                <figure>
+                    <img src="media/yelp-community/add-friend.png">
+                    <figcaption>Redesigned add friends page - includes option to search via username rather than first and last names</figcaption>
+                </figure>
+            </div>
+        </section>
+        <section class="cs-section-b">
+            <h3>User Testing and Next Steps</h3>
+            <p>We conducted a series of moderated, remote usability tests, where users were asked to complete two tasks: adding a friend and finding friends’ reviews. While all users tested mentioned that they liked the concept and are more likely to trust recommendations that come from people they know, there were a few areas that required further improvements. </p>
+            <ul>
+                <li>Users reported that the name “Community” was too ambiguous in meaning - some users interpreted it as a place to see their friends’ activity (as we initially intended), while others thought it stood for local community recommendations. </li>
+                <li>We also found that many testers struggled with finding the add friends function, indicating that we need to edit the icon to communicate more clearly what the button stands for.</li>
+                <li>Finally, it was noted that some users initially clicked on the search bar on the home page to search for friends’ reviews. When asked for the reasoning behind their behavior, a user mentioned that they anticipated to search for a place to visit first, then hope to see their friends’ reviews highlighted in their search. Our team believed this was an interesting direction to explore if we had the time to expand further on this project. </li>
+            </ul>
+        </section>
+        <section class="cs-section-a">
+            <h3>Learning opportunities</h3>
+            <p>As our first UX design challenge, we learned many unforgettable lessons about the design process. While we inially started off by defining the problem and ideating solutions before doing adequate research, we realized that we needed to take a step back to analyze user insights and redefine our problem space. Listening to our users led us back on track to designing a solution that would actually target users’ pain points. </p>
+            <p>Likewise, we learned a lot about desgining a product from a business standpoint. While it is important to consider the user’s perspective, we also needed to consider the costs and benefits of this design to Yelp as a company. We constantly asked ourselves, “How might we incentivize users who don’t normally use Yelp to actually use the app?”</p>
+            <p>Questions like this were crucial to understand, as we were designing from both a business perspective and user’s perspective. In this way, we learned the importance of viewing the problem space from different perspectives and designing a solution that addresses both stakeholder and user needs. </p>
+        </section>
+        <section class="cs-section-b">
+            <h2>Presentation</h2>
+            <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vRkDYqP2DCeSfa6P4lz3fP66S35PJPJgVrZqG_gAJnaRviFtbROIjjPgY5oUeQa8ipnlDTiup8pdDkX/embed?start=false&loop=true&delayms=5000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+        </section>
+
+
+
+    </article>
+    
+
+
+
+
+    <footer>
+        <h1>Let's Connect!</h1>
+        <ul>
+            <li><a href="mailto:kassidytran@gmail.com">kassidytran@gmail.com</a></li>
+            <li><a href="https://www.linkedin.com/in/kassidy-tran/">LinkedIn</a></li>
+        </ul>
+    </footer>
+    
+    
+</body>
+</html>
