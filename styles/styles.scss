@@ -9,7 +9,9 @@ $textColor: #033962;
 $primaryFont: Inter, sans-serif;
 $headerFont: Lexend, sans-serif;
 $monospace: Fira Mono, monospace;
-$sectionPadding: 60px 200px;
+$sectionPadding: 100px 200px;
+$sectionPaddingMed: 60px 100px;
+$sectionPaddingSm: 80px 50px;
 $border: 1px solid black;
 
 html {
@@ -93,7 +95,7 @@ header {
         font-size: 32px;
     }
     img {
-        max-width: 25%;
+        max-width: 300px;
     }
 }
 .work-container {
@@ -112,8 +114,6 @@ header {
         display: flex;
         flex-flow: column;
         flex-flow: column;
-     
-
         .cs-container {
             display: flex;
             align-items: flex-start;
@@ -342,6 +342,9 @@ article {
             margin: 50px;
             padding-left: 20px;
         }
+        iframe {
+            max-width: 100%;
+        }
     }
    
 }
@@ -450,4 +453,785 @@ footer {
 }
 .about-more {
     padding: $sectionPadding;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 990px) {
+    header {
+        padding: 10px 20px;
+        background-color: $lightColor;
+        nav {
+            ul {
+                margin: 0;
+                padding: 0;
+                list-style: none;
+                display: flex;
+                flex-flow: column;
+                justify-content: center;
+                align-items: center;
+                li {
+                    margin: 20px;
+                    display: inline-block;
+                    flex-flow: column;
+                    justify-content: center;
+                    align-items: center;
+                    top: 10px;
+                }
+            }
+            .logo {
+                margin-left: auto;
+                a:hover {
+                    border: 2px solid transparent;
+                }
+            }
+        }
+    }
+
+
+
+    .intro-container {
+        padding: $sectionPaddingMed;
+    
+        h1 {
+            font-size: 40px;
+        }
+        h2 {
+            font-family: $primaryFont;
+            font-weight: 300;
+            font-size: 26px;
+        }
+        img {
+            max-width: 300px;
+        }
+    }
+
+    .work-container {
+        padding: $sectionPaddingMed;
+        display: flex;
+        flex-flow: column;
+        gap: 50px;
+        
+        h2 {
+            letter-spacing: 3px;
+            font-size: 18px;
+        }
+    
+        .cs-list {
+            gap: 100px;
+            display: flex;
+            flex-flow: column;
+            flex-flow: column;
+         
+    
+            .cs-container {
+                display: flex;
+                flex-flow: column;
+                gap: 10px;
+                align-items: flex-start;
+              
+                .cs-description {
+                    h3 {
+                        
+                        font-family: $monospace;
+                        font-size: 16px;
+                        margin-bottom: 10px;
+                    }
+                    h4 {
+                        
+                        font-size: 28px;
+                        margin-top: 10px;
+                        margin-bottom: 10px;
+                    }
+                    p {
+                        margin-top: 0;
+                    }
+                    display: flex;
+                    flex-flow: column;
+                    max-width: 100%;
+                    margin-right: auto;
+                }
+                a {
+                    max-width: 100%;
+                    .grow {
+                        max-width: 100%;
+                        border-radius: 10px;
+                        transition: all .2s ease-in-out;
+                    }
+                    .grow:hover {
+                        transform: scale(1.05);
+                        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+                    }
+                }
+                
+                .button {
+                    display: flex;
+                    margin-top: 10px;
+                    margin-bottom: 20px;
+                    a {
+                        border: 2px solid $accentColor;
+                        background-color: $accentColor;
+                        color: $lightColor;
+                        font-family: $monospace;
+                        font-size: 16px;
+                        text-decoration: none;
+                        display: block;
+                        border-radius: 5px;
+                        padding: 12px 20px;
+                    }
+                    a:hover {
+                        border: 2px dashed $accentColor;
+                        background-color: transparent;
+                        color: $accentColor;
+                        font-family: $monospace;
+                        font-size: 16px;
+                        text-decoration: none;
+                        display: block;
+                        border-radius: 5px;
+                        padding: 12px 20px;
+                    }
+                }
+            }
+        }
+    }
+    
+    article {
+        .cs-title {
+            padding: $sectionPaddingMed;
+            h1 {
+                font-size: 40px;
+                margin-bottom: 0;
+            }
+            h2 {
+                font-size: 20px;
+                font-family: $primaryFont;
+                font-weight: 300;
+                margin-bottom: 50px; 
+            }
+            h3 {
+                font-family: $monospace;
+                font-size: 16px;
+            }
+        }
+        .img-container {
+            padding: $sectionPaddingMed;
+            background-color: $primaryColor;
+            display: flex;
+            justify-content: center;
+            gap: 50px;  
+            img {
+                max-width: 20%;
+            }
+        }
+        .img-container-uinv {
+            padding: $sectionPaddingMed;
+            background-color: $accentColorLight;
+            display: flex;
+            justify-content: center;
+            img {
+                max-width: 120%;
+            }
+        }
+        .cs-overview {
+            padding: $sectionPaddingMed;
+            h2 {
+                
+                font-size: 20px;
+            }
+            p {
+                font-size: 18px;
+            }
+            .cs-details-container {
+                display: flex;
+                justify-content: flex-start;
+                li {
+                    font-family: $primaryFont;
+                    font-size: 18px;
+                    font-weight: 300;
+                    color: $textColor;
+                }
+                .roles-responsibilities {
+                    margin-right: auto;
+                }
+                .tools {
+                    margin-right: auto;
+                }
+            }
+        }
+        .cs-section-a {
+            background-color: $lightColor;
+            padding: $sectionPaddingMed;
+            iframe {
+                max-width: 100%;
+            }
+            p {
+                font-size: 18px;
+            }
+            a {
+                color: $secondaryColor;
+                text-decoration: underline;
+            }
+            a:hover {
+                color: $accentColor;
+            }
+            li {
+                font-family: $primaryFont;
+                font-weight: 300;
+                font-size: 18px;
+                color: $textColor;
+            }
+            .callout {
+                border-left: 3px solid $accentColor;
+                font-size: 24px;
+                margin: 50px;
+                padding-left: 24px;
+            }
+            h3 {
+                font-family: $primaryFont;
+                font-weight: 500;
+                text-decoration: underline;
+            }
+            blockquote {
+                font-size: 18px;
+                color: $textColor;
+                font-family: $headerFont;
+                margin: 40px;
+                
+            }
+            .cs-img-container {
+                padding: 40px 0px;
+                display: flex;
+                flex-flow: column;
+                justify-content: center;
+                figure {
+                    img {
+                        max-width: 100%;
+                        border-radius: 5px;
+                    }
+                    figcaption {
+                        font-family: $monospace;
+                        background-color: $primaryColor;
+                        color: $textColor;
+                        text-align: center;
+                    }
+                }
+            }
+        }
+        .cs-section-b {
+            padding: $sectionPaddingMed;
+            display: flex;
+            flex-flow: column;
+    
+            p {
+                font-size: 18px;
+            }
+            li {
+                font-family: $primaryFont;
+                font-weight: 300;
+                font-size: 18px;
+                color: $textColor;
+            }
+            strong {
+                font-weight: 500;
+            }
+            h3 {
+                font-family: $primaryFont;
+                font-weight: 500;
+                text-decoration: underline;
+            }
+            .cs-img-container {
+                padding: 40px 0px;
+                display: flex;
+                flex-flow: column;
+                justify-content: center;
+                figure {
+                    img {
+                        max-width: 100%;
+                        border-radius: 5px;
+                    }
+                    figcaption {
+                        font-family: $monospace;
+                        background-color: $primaryColor;
+                        color: $textColor;
+                        text-align: center;
+                        max-width: 100%;
+                    }
+                }
+            }
+            .callout {
+                border-left: 3px solid $accentColor;
+                font-size: 24px;
+                margin: 50px;
+                padding-left: 20px;
+            }
+            iframe {
+                max-width: 100%;
+            }
+        }
+       
+    }
+    
+    .about-intro {
+        padding: $sectionPaddingMed;
+            display: flex;
+            flex-flow: row;
+            align-items: center;
+            gap: 100px;
+            img {
+                max-width: 250px;
+            }
+            h1 {
+                font-size: 42px;
+            }
+    }
+    
+    .about-details {
+        padding: $sectionPaddingMed;
+        display: flex;
+        gap: 50px;
+        justify-content: space-evenly;
+        .skills-and-interests {
+            max-width: 50%;
+        }
+        .education {
+            max-width: 50%;
+            .uci {
+                p {
+                    padding: 0;
+                    margin: 0;
+                }
+                margin-bottom: 20px;
+            }
+            .ucla {
+                p {
+                    padding: 0;
+                    margin: 0;
+                }
+            }
+        }
+    }
+    
+    .contact-info {
+        padding: $sectionPaddingMed;
+        margin-bottom: 50px;
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        h2 {
+            a {
+                color: $accentColor;
+                text-decoration: none;
+                border: 1px solid transparent;
+            }
+            a:hover {
+                border: 1px dashed $accentColor;
+                border-radius: 5px;
+            }
+        }
+    }
+    .about-more {
+        padding: $sectionPadding;
+    }
+}
+
+
+@media (max-width: 490px) {
+    .intro-container {
+        padding: $sectionPaddingSm;
+    
+        h1 {
+            font-size: 32px;
+        }
+        h2 {
+            font-family: $primaryFont;
+            font-weight: 300;
+            font-size: 24px;
+        }
+        img {
+            max-width: 300px;
+        }
+    }
+
+    .work-container {
+        margin-top: 50px;
+        padding: $sectionPaddingSm;
+        display: flex;
+        flex-flow: column;
+        gap: 20px;
+        
+        h2 {
+            letter-spacing: 3px;
+            font-size: 18px;
+        }
+    
+        .cs-list {
+            gap: 100px;
+            display: flex;
+            flex-flow: column;
+            flex-flow: column;
+         
+    
+            .cs-container {
+                display: flex;
+                flex-flow: column;
+                gap: 10px;
+                align-items: flex-start;
+              
+                .cs-description {
+                    h3 {
+                        font-family: $monospace;
+                        font-size: 16px;
+                        margin-bottom: 10px;
+                    }
+                    h4 {
+                        
+                        font-size: 24px;
+                        margin-top: 10px;
+                        margin-bottom: 10px;
+                    }
+                    p {
+                        margin-top: 0;
+                        font-size: 16px;
+                    }
+                    display: flex;
+                    flex-flow: column;
+                    max-width: 100%;
+                    margin-right: auto;
+                }
+                a {
+                    max-width: 100%;
+                    .grow {
+                        max-width: 100%;
+                        border-radius: 10px;
+                        transition: all .2s ease-in-out;
+                    }
+                    .grow:hover {
+                        transform: scale(1.05);
+                        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+                    }
+                }
+                
+                .button {
+                    display: flex;
+                    margin-top: 10px;
+                    margin-bottom: 20px;
+                    a {
+                        border: 2px solid $accentColor;
+                        background-color: $accentColor;
+                        color: $lightColor;
+                        font-family: $monospace;
+                        font-size: 16px;
+                        text-decoration: none;
+                        display: block;
+                        border-radius: 5px;
+                        padding: 12px 20px;
+                    }
+                    a:hover {
+                        border: 2px dashed $accentColor;
+                        background-color: transparent;
+                        color: $accentColor;
+                        font-family: $monospace;
+                        font-size: 16px;
+                        text-decoration: none;
+                        display: block;
+                        border-radius: 5px;
+                        padding: 12px 20px;
+                    }
+                }
+            }
+        }
+    }
+
+
+    article {
+        .cs-title {
+            padding: $sectionPaddingSm;
+            h1 {
+                font-size: 40px;
+                margin-bottom: 0;
+            }
+            h2 {
+                font-size: 20px;
+                font-family: $primaryFont;
+                font-weight: 300;
+                margin-bottom: 50px; 
+            }
+            h3 {
+                font-family: $monospace;
+                font-size: 16px;
+            }
+        }
+        .img-container {
+            padding: $sectionPaddingSm;
+            background-color: $primaryColor;
+            display: flex;
+            justify-content: center;
+            gap: 20px;  
+            img {
+                max-width: 30%;
+            }
+        }
+        .img-container-uinv {
+            padding: $sectionPaddingSm;
+            background-color: $accentColorLight;
+            display: flex;
+            justify-content: center;
+            img {
+                max-width: 120%;
+            }
+        }
+        .cs-overview {
+            padding: $sectionPaddingSm;
+            h2 {
+                
+                font-size: 20px;
+            }
+            p {
+                font-size: 18px;
+            }
+            .cs-details-container {
+                display: flex;
+                flex-flow: column;
+                justify-content: flex-start;
+                li {
+                    font-family: $primaryFont;
+                    font-size: 18px;
+                    font-weight: 300;
+                    color: $textColor;
+                }
+                .roles-responsibilities {
+                    margin-right: auto;
+                }
+                .tools {
+                    margin-right: auto;
+                }
+            }
+        }
+        .cs-section-a {
+            background-color: $lightColor;
+            padding: $sectionPaddingSm;
+            iframe {
+                max-width: 100%;
+            }
+            p {
+                font-size: 18px;
+            }
+            a {
+                color: $secondaryColor;
+                text-decoration: underline;
+            }
+            a:hover {
+                color: $accentColor;
+            }
+            li {
+                font-family: $primaryFont;
+                font-weight: 300;
+                font-size: 18px;
+                color: $textColor;
+            }
+            .callout {
+                border-left: 3px solid $accentColor;
+                font-size: 24px;
+                margin: 50px;
+                padding-left: 24px;
+            }
+            h3 {
+                font-family: $primaryFont;
+                font-weight: 500;
+                text-decoration: underline;
+            }
+            blockquote {
+                font-size: 18px;
+                color: $textColor;
+                font-family: $headerFont;
+                margin: 40px;
+                
+            }
+            .cs-img-container {
+                padding: 40px 0px;
+                display: flex;
+                flex-flow: column;
+                justify-content: center;
+                figure {
+                    img {
+                        max-width: 100%;
+                        border-radius: 5px;
+                    }
+                    figcaption {
+                        font-family: $monospace;
+                        background-color: $primaryColor;
+                        color: $textColor;
+                        text-align: center;
+                    }
+                }
+            }
+        }
+        .cs-section-b {
+            padding: $sectionPaddingSm;
+            display: flex;
+            flex-flow: column;
+    
+            p {
+                font-size: 18px;
+            }
+            li {
+                font-family: $primaryFont;
+                font-weight: 300;
+                font-size: 18px;
+                color: $textColor;
+            }
+            strong {
+                font-weight: 500;
+            }
+            h3 {
+                font-family: $primaryFont;
+                font-weight: 500;
+                text-decoration: underline;
+            }
+            .cs-img-container {
+                padding: 40px 0px;
+                display: flex;
+                flex-flow: column;
+                justify-content: center;
+                figure {
+                    img {
+                        max-width: 100%;
+                        border-radius: 5px;
+                    }
+                    figcaption {
+                        font-family: $monospace;
+                        background-color: $primaryColor;
+                        color: $textColor;
+                        text-align: center;
+                        max-width: 100%;
+                    }
+                }
+            }
+            .callout {
+                border-left: 3px solid $accentColor;
+                font-size: 24px;
+                margin: 50px;
+                padding-left: 20px;
+            }
+            iframe {
+                max-width: 100%;
+            }
+        }
+       
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    .about-intro {
+        padding: $sectionPaddingSm;
+        margin-top: 40px;
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        gap: 20px;
+        img {
+            max-width: 250px;
+        }
+        h1 {
+            font-size: 42px;
+        }
+    }
+    
+    .about-details {
+        padding: $sectionPaddingSm;
+        display: flex;
+        flex-flow: column;
+        gap: 10px;
+        justify-content: space-evenly;
+        .skills-and-interests {
+            max-width: 100%;
+        }
+        .education {
+            max-width: 100%;
+            .uci {
+                p {
+                    padding: 0;
+                    margin: 0;
+                }
+                margin-bottom: 20px;
+            }
+            .ucla {
+                p {
+                    padding: 0;
+                    margin: 0;
+                }
+            }
+        }
+    }
+    
+    .contact-info {
+        margin-top: 30px;
+        padding: $sectionPaddingSm;
+        margin-bottom: 50px;
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        h2 {
+            a {
+                color: $accentColor;
+                text-decoration: none;
+                border: 1px solid transparent;
+            }
+            a:hover {
+                border: 1px dashed $accentColor;
+                border-radius: 5px;
+            }
+        }
+    }
+
 }

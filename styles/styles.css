@@ -68,7 +68,7 @@ header nav .logo a:hover {
 }
 
 .intro-container {
-  padding: 60px 200px;
+  padding: 100px 200px;
 }
 .intro-container h1 {
   font-size: 48px;
@@ -79,11 +79,11 @@ header nav .logo a:hover {
   font-size: 32px;
 }
 .intro-container img {
-  max-width: 25%;
+  max-width: 300px;
 }
 
 .work-container {
-  padding: 60px 200px;
+  padding: 100px 200px;
   display: flex;
   flex-flow: column;
   gap: 50px;
@@ -160,7 +160,7 @@ header nav .logo a:hover {
 }
 
 article .cs-title {
-  padding: 60px 200px;
+  padding: 100px 200px;
 }
 article .cs-title h1 {
   font-size: 48px;
@@ -176,7 +176,7 @@ article .cs-title h3 {
   font-family: Fira Mono, monospace;
 }
 article .img-container {
-  padding: 60px 200px;
+  padding: 100px 200px;
   background-color: #D4E6F1;
   display: flex;
   justify-content: center;
@@ -186,7 +186,7 @@ article .img-container img {
   max-width: 20%;
 }
 article .img-container-uinv {
-  padding: 60px 200px;
+  padding: 100px 200px;
   background-color: #FFEFD2;
   display: flex;
   justify-content: center;
@@ -195,7 +195,7 @@ article .img-container-uinv img {
   max-width: 120%;
 }
 article .cs-overview {
-  padding: 60px 200px;
+  padding: 100px 200px;
 }
 article .cs-overview h2 {
   font-size: 24px;
@@ -221,7 +221,7 @@ article .cs-overview .cs-details-container .tools {
 }
 article .cs-section-a {
   background-color: #fafafa;
-  padding: 60px 200px;
+  padding: 100px 200px;
 }
 article .cs-section-a p {
   font-size: 20px;
@@ -272,7 +272,7 @@ article .cs-section-a .cs-img-container figure figcaption {
   text-align: center;
 }
 article .cs-section-b {
-  padding: 60px 200px;
+  padding: 100px 200px;
   display: flex;
   flex-flow: column;
 }
@@ -314,6 +314,9 @@ article .cs-section-b .callout {
   margin: 50px;
   padding-left: 20px;
 }
+article .cs-section-b iframe {
+  max-width: 100%;
+}
 
 footer {
   background-color: #fafafa;
@@ -352,7 +355,7 @@ footer ul a:active {
 }
 
 .about-intro {
-  padding: 60px 200px;
+  padding: 100px 200px;
   display: flex;
   flex-flow: row;
   align-items: center;
@@ -366,7 +369,7 @@ footer ul a:active {
 }
 
 .about-details {
-  padding: 60px 200px;
+  padding: 100px 200px;
   display: flex;
   gap: 100px;
   justify-content: space-evenly;
@@ -390,7 +393,7 @@ footer ul a:active {
 }
 
 .contact-info {
-  padding: 60px 200px;
+  padding: 100px 200px;
   display: flex;
   flex-flow: column;
   align-items: center;
@@ -406,5 +409,668 @@ footer ul a:active {
 }
 
 .about-more {
-  padding: 60px 200px;
+  padding: 100px 200px;
+}
+
+@media (max-width: 990px) {
+  header {
+    padding: 10px 20px;
+    background-color: #fafafa;
+  }
+  header nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+  }
+  header nav ul li {
+    margin: 20px;
+    display: inline-block;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    top: 10px;
+  }
+  header nav .logo {
+    margin-left: auto;
+  }
+  header nav .logo a:hover {
+    border: 2px solid transparent;
+  }
+  .intro-container {
+    padding: 60px 100px;
+  }
+  .intro-container h1 {
+    font-size: 40px;
+  }
+  .intro-container h2 {
+    font-family: Inter, sans-serif;
+    font-weight: 300;
+    font-size: 26px;
+  }
+  .intro-container img {
+    max-width: 300px;
+  }
+  .work-container {
+    padding: 60px 100px;
+    display: flex;
+    flex-flow: column;
+    gap: 50px;
+  }
+  .work-container h2 {
+    letter-spacing: 3px;
+    font-size: 18px;
+  }
+  .work-container .cs-list {
+    gap: 100px;
+    display: flex;
+    flex-flow: column;
+    flex-flow: column;
+  }
+  .work-container .cs-list .cs-container {
+    display: flex;
+    flex-flow: column;
+    gap: 10px;
+    align-items: flex-start;
+  }
+  .work-container .cs-list .cs-container .cs-description {
+    display: flex;
+    flex-flow: column;
+    max-width: 100%;
+    margin-right: auto;
+  }
+  .work-container .cs-list .cs-container .cs-description h3 {
+    font-family: Fira Mono, monospace;
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  .work-container .cs-list .cs-container .cs-description h4 {
+    font-size: 28px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .work-container .cs-list .cs-container .cs-description p {
+    margin-top: 0;
+  }
+  .work-container .cs-list .cs-container a {
+    max-width: 100%;
+  }
+  .work-container .cs-list .cs-container a .grow {
+    max-width: 100%;
+    border-radius: 10px;
+    transition: all 0.2s ease-in-out;
+  }
+  .work-container .cs-list .cs-container a .grow:hover {
+    transform: scale(1.05);
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  }
+  .work-container .cs-list .cs-container .button {
+    display: flex;
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+  .work-container .cs-list .cs-container .button a {
+    border: 2px solid #FFA600;
+    background-color: #FFA600;
+    color: #fafafa;
+    font-family: Fira Mono, monospace;
+    font-size: 16px;
+    text-decoration: none;
+    display: block;
+    border-radius: 5px;
+    padding: 12px 20px;
+  }
+  .work-container .cs-list .cs-container .button a:hover {
+    border: 2px dashed #FFA600;
+    background-color: transparent;
+    color: #FFA600;
+    font-family: Fira Mono, monospace;
+    font-size: 16px;
+    text-decoration: none;
+    display: block;
+    border-radius: 5px;
+    padding: 12px 20px;
+  }
+  article .cs-title {
+    padding: 60px 100px;
+  }
+  article .cs-title h1 {
+    font-size: 40px;
+    margin-bottom: 0;
+  }
+  article .cs-title h2 {
+    font-size: 20px;
+    font-family: Inter, sans-serif;
+    font-weight: 300;
+    margin-bottom: 50px;
+  }
+  article .cs-title h3 {
+    font-family: Fira Mono, monospace;
+    font-size: 16px;
+  }
+  article .img-container {
+    padding: 60px 100px;
+    background-color: #D4E6F1;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+  }
+  article .img-container img {
+    max-width: 20%;
+  }
+  article .img-container-uinv {
+    padding: 60px 100px;
+    background-color: #FFEFD2;
+    display: flex;
+    justify-content: center;
+  }
+  article .img-container-uinv img {
+    max-width: 120%;
+  }
+  article .cs-overview {
+    padding: 60px 100px;
+  }
+  article .cs-overview h2 {
+    font-size: 20px;
+  }
+  article .cs-overview p {
+    font-size: 18px;
+  }
+  article .cs-overview .cs-details-container {
+    display: flex;
+    justify-content: flex-start;
+  }
+  article .cs-overview .cs-details-container li {
+    font-family: Inter, sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    color: #033962;
+  }
+  article .cs-overview .cs-details-container .roles-responsibilities {
+    margin-right: auto;
+  }
+  article .cs-overview .cs-details-container .tools {
+    margin-right: auto;
+  }
+  article .cs-section-a {
+    background-color: #fafafa;
+    padding: 60px 100px;
+  }
+  article .cs-section-a iframe {
+    max-width: 100%;
+  }
+  article .cs-section-a p {
+    font-size: 18px;
+  }
+  article .cs-section-a a {
+    color: #033962;
+    text-decoration: underline;
+  }
+  article .cs-section-a a:hover {
+    color: #FFA600;
+  }
+  article .cs-section-a li {
+    font-family: Inter, sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    color: #033962;
+  }
+  article .cs-section-a .callout {
+    border-left: 3px solid #FFA600;
+    font-size: 24px;
+    margin: 50px;
+    padding-left: 24px;
+  }
+  article .cs-section-a h3 {
+    font-family: Inter, sans-serif;
+    font-weight: 500;
+    text-decoration: underline;
+  }
+  article .cs-section-a blockquote {
+    font-size: 18px;
+    color: #033962;
+    font-family: Lexend, sans-serif;
+    margin: 40px;
+  }
+  article .cs-section-a .cs-img-container {
+    padding: 40px 0px;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+  }
+  article .cs-section-a .cs-img-container figure img {
+    max-width: 100%;
+    border-radius: 5px;
+  }
+  article .cs-section-a .cs-img-container figure figcaption {
+    font-family: Fira Mono, monospace;
+    background-color: #D4E6F1;
+    color: #033962;
+    text-align: center;
+  }
+  article .cs-section-b {
+    padding: 60px 100px;
+    display: flex;
+    flex-flow: column;
+  }
+  article .cs-section-b p {
+    font-size: 18px;
+  }
+  article .cs-section-b li {
+    font-family: Inter, sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    color: #033962;
+  }
+  article .cs-section-b strong {
+    font-weight: 500;
+  }
+  article .cs-section-b h3 {
+    font-family: Inter, sans-serif;
+    font-weight: 500;
+    text-decoration: underline;
+  }
+  article .cs-section-b .cs-img-container {
+    padding: 40px 0px;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+  }
+  article .cs-section-b .cs-img-container figure img {
+    max-width: 100%;
+    border-radius: 5px;
+  }
+  article .cs-section-b .cs-img-container figure figcaption {
+    font-family: Fira Mono, monospace;
+    background-color: #D4E6F1;
+    color: #033962;
+    text-align: center;
+    max-width: 100%;
+  }
+  article .cs-section-b .callout {
+    border-left: 3px solid #FFA600;
+    font-size: 24px;
+    margin: 50px;
+    padding-left: 20px;
+  }
+  article .cs-section-b iframe {
+    max-width: 100%;
+  }
+  .about-intro {
+    padding: 60px 100px;
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    gap: 100px;
+  }
+  .about-intro img {
+    max-width: 250px;
+  }
+  .about-intro h1 {
+    font-size: 42px;
+  }
+  .about-details {
+    padding: 60px 100px;
+    display: flex;
+    gap: 50px;
+    justify-content: space-evenly;
+  }
+  .about-details .skills-and-interests {
+    max-width: 50%;
+  }
+  .about-details .education {
+    max-width: 50%;
+  }
+  .about-details .education .uci {
+    margin-bottom: 20px;
+  }
+  .about-details .education .uci p {
+    padding: 0;
+    margin: 0;
+  }
+  .about-details .education .ucla p {
+    padding: 0;
+    margin: 0;
+  }
+  .contact-info {
+    padding: 60px 100px;
+    margin-bottom: 50px;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+  }
+  .contact-info h2 a {
+    color: #FFA600;
+    text-decoration: none;
+    border: 1px solid transparent;
+  }
+  .contact-info h2 a:hover {
+    border: 1px dashed #FFA600;
+    border-radius: 5px;
+  }
+  .about-more {
+    padding: 100px 200px;
+  }
+}
+@media (max-width: 490px) {
+  .intro-container {
+    padding: 80px 50px;
+  }
+  .intro-container h1 {
+    font-size: 32px;
+  }
+  .intro-container h2 {
+    font-family: Inter, sans-serif;
+    font-weight: 300;
+    font-size: 24px;
+  }
+  .intro-container img {
+    max-width: 300px;
+  }
+  .work-container {
+    margin-top: 50px;
+    padding: 80px 50px;
+    display: flex;
+    flex-flow: column;
+    gap: 20px;
+  }
+  .work-container h2 {
+    letter-spacing: 3px;
+    font-size: 18px;
+  }
+  .work-container .cs-list {
+    gap: 100px;
+    display: flex;
+    flex-flow: column;
+    flex-flow: column;
+  }
+  .work-container .cs-list .cs-container {
+    display: flex;
+    flex-flow: column;
+    gap: 10px;
+    align-items: flex-start;
+  }
+  .work-container .cs-list .cs-container .cs-description {
+    display: flex;
+    flex-flow: column;
+    max-width: 100%;
+    margin-right: auto;
+  }
+  .work-container .cs-list .cs-container .cs-description h3 {
+    font-family: Fira Mono, monospace;
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  .work-container .cs-list .cs-container .cs-description h4 {
+    font-size: 24px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .work-container .cs-list .cs-container .cs-description p {
+    margin-top: 0;
+    font-size: 16px;
+  }
+  .work-container .cs-list .cs-container a {
+    max-width: 100%;
+  }
+  .work-container .cs-list .cs-container a .grow {
+    max-width: 100%;
+    border-radius: 10px;
+    transition: all 0.2s ease-in-out;
+  }
+  .work-container .cs-list .cs-container a .grow:hover {
+    transform: scale(1.05);
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  }
+  .work-container .cs-list .cs-container .button {
+    display: flex;
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+  .work-container .cs-list .cs-container .button a {
+    border: 2px solid #FFA600;
+    background-color: #FFA600;
+    color: #fafafa;
+    font-family: Fira Mono, monospace;
+    font-size: 16px;
+    text-decoration: none;
+    display: block;
+    border-radius: 5px;
+    padding: 12px 20px;
+  }
+  .work-container .cs-list .cs-container .button a:hover {
+    border: 2px dashed #FFA600;
+    background-color: transparent;
+    color: #FFA600;
+    font-family: Fira Mono, monospace;
+    font-size: 16px;
+    text-decoration: none;
+    display: block;
+    border-radius: 5px;
+    padding: 12px 20px;
+  }
+  article .cs-title {
+    padding: 80px 50px;
+  }
+  article .cs-title h1 {
+    font-size: 40px;
+    margin-bottom: 0;
+  }
+  article .cs-title h2 {
+    font-size: 20px;
+    font-family: Inter, sans-serif;
+    font-weight: 300;
+    margin-bottom: 50px;
+  }
+  article .cs-title h3 {
+    font-family: Fira Mono, monospace;
+    font-size: 16px;
+  }
+  article .img-container {
+    padding: 80px 50px;
+    background-color: #D4E6F1;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  article .img-container img {
+    max-width: 30%;
+  }
+  article .img-container-uinv {
+    padding: 80px 50px;
+    background-color: #FFEFD2;
+    display: flex;
+    justify-content: center;
+  }
+  article .img-container-uinv img {
+    max-width: 120%;
+  }
+  article .cs-overview {
+    padding: 80px 50px;
+  }
+  article .cs-overview h2 {
+    font-size: 20px;
+  }
+  article .cs-overview p {
+    font-size: 18px;
+  }
+  article .cs-overview .cs-details-container {
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-start;
+  }
+  article .cs-overview .cs-details-container li {
+    font-family: Inter, sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    color: #033962;
+  }
+  article .cs-overview .cs-details-container .roles-responsibilities {
+    margin-right: auto;
+  }
+  article .cs-overview .cs-details-container .tools {
+    margin-right: auto;
+  }
+  article .cs-section-a {
+    background-color: #fafafa;
+    padding: 80px 50px;
+  }
+  article .cs-section-a iframe {
+    max-width: 100%;
+  }
+  article .cs-section-a p {
+    font-size: 18px;
+  }
+  article .cs-section-a a {
+    color: #033962;
+    text-decoration: underline;
+  }
+  article .cs-section-a a:hover {
+    color: #FFA600;
+  }
+  article .cs-section-a li {
+    font-family: Inter, sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    color: #033962;
+  }
+  article .cs-section-a .callout {
+    border-left: 3px solid #FFA600;
+    font-size: 24px;
+    margin: 50px;
+    padding-left: 24px;
+  }
+  article .cs-section-a h3 {
+    font-family: Inter, sans-serif;
+    font-weight: 500;
+    text-decoration: underline;
+  }
+  article .cs-section-a blockquote {
+    font-size: 18px;
+    color: #033962;
+    font-family: Lexend, sans-serif;
+    margin: 40px;
+  }
+  article .cs-section-a .cs-img-container {
+    padding: 40px 0px;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+  }
+  article .cs-section-a .cs-img-container figure img {
+    max-width: 100%;
+    border-radius: 5px;
+  }
+  article .cs-section-a .cs-img-container figure figcaption {
+    font-family: Fira Mono, monospace;
+    background-color: #D4E6F1;
+    color: #033962;
+    text-align: center;
+  }
+  article .cs-section-b {
+    padding: 80px 50px;
+    display: flex;
+    flex-flow: column;
+  }
+  article .cs-section-b p {
+    font-size: 18px;
+  }
+  article .cs-section-b li {
+    font-family: Inter, sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    color: #033962;
+  }
+  article .cs-section-b strong {
+    font-weight: 500;
+  }
+  article .cs-section-b h3 {
+    font-family: Inter, sans-serif;
+    font-weight: 500;
+    text-decoration: underline;
+  }
+  article .cs-section-b .cs-img-container {
+    padding: 40px 0px;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+  }
+  article .cs-section-b .cs-img-container figure img {
+    max-width: 100%;
+    border-radius: 5px;
+  }
+  article .cs-section-b .cs-img-container figure figcaption {
+    font-family: Fira Mono, monospace;
+    background-color: #D4E6F1;
+    color: #033962;
+    text-align: center;
+    max-width: 100%;
+  }
+  article .cs-section-b .callout {
+    border-left: 3px solid #FFA600;
+    font-size: 24px;
+    margin: 50px;
+    padding-left: 20px;
+  }
+  article .cs-section-b iframe {
+    max-width: 100%;
+  }
+  .about-intro {
+    padding: 80px 50px;
+    margin-top: 40px;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    gap: 20px;
+  }
+  .about-intro img {
+    max-width: 250px;
+  }
+  .about-intro h1 {
+    font-size: 42px;
+  }
+  .about-details {
+    padding: 80px 50px;
+    display: flex;
+    flex-flow: column;
+    gap: 10px;
+    justify-content: space-evenly;
+  }
+  .about-details .skills-and-interests {
+    max-width: 100%;
+  }
+  .about-details .education {
+    max-width: 100%;
+  }
+  .about-details .education .uci {
+    margin-bottom: 20px;
+  }
+  .about-details .education .uci p {
+    padding: 0;
+    margin: 0;
+  }
+  .about-details .education .ucla p {
+    padding: 0;
+    margin: 0;
+  }
+  .contact-info {
+    margin-top: 30px;
+    padding: 80px 50px;
+    margin-bottom: 50px;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+  }
+  .contact-info h2 a {
+    color: #FFA600;
+    text-decoration: none;
+    border: 1px solid transparent;
+  }
+  .contact-info h2 a:hover {
+    border: 1px dashed #FFA600;
+    border-radius: 5px;
+  }
 }/*# sourceMappingURL=styles.css.map */
