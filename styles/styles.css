@@ -327,6 +327,9 @@ article .cs-section-b .cs-img-container {
   display: flex;
   justify-content: space-evenly;
 }
+article .cs-section-b .cs-img-container figure {
+  max-width: 100%;
+}
 article .cs-section-b .cs-img-container figure img {
   max-width: 100%;
   border-radius: 5px;
@@ -671,7 +674,11 @@ footer ul a:active {
     padding: 40px 0px;
     display: flex;
     flex-flow: column;
+    align-items: center;
     justify-content: center;
+  }
+  article .cs-section-a .cs-img-container figure {
+    max-width: 50%;
   }
   article .cs-section-a .cs-img-container figure img {
     max-width: 100%;
@@ -709,7 +716,11 @@ footer ul a:active {
     padding: 40px 0px;
     display: flex;
     flex-flow: column;
+    align-items: center;
     justify-content: center;
+  }
+  article .cs-section-b .cs-img-container figure {
+    max-width: 50%;
   }
   article .cs-section-b .cs-img-container figure img {
     max-width: 100%;
@@ -1031,6 +1042,7 @@ footer ul a:active {
     display: flex;
     flex-flow: column;
     justify-content: center;
+    align-items: center;
   }
   article .cs-section-a .cs-img-container figure img {
     max-width: 100%;
@@ -1069,6 +1081,7 @@ footer ul a:active {
     display: flex;
     flex-flow: column;
     justify-content: center;
+    align-items: center;
   }
   article .cs-section-b .cs-img-container figure img {
     max-width: 100%;

@@ -350,6 +350,7 @@ article {
             display: flex;
             justify-content: space-evenly;
             figure {
+                max-width: 100%;
                 img {
                     max-width: 100%;
                     border-radius: 5px;
@@ -766,8 +767,10 @@ footer {
                 padding: 40px 0px;
                 display: flex;
                 flex-flow: column;
+                align-items: center;
                 justify-content: center;
                 figure {
+                    max-width: 50%;
                     img {
                         max-width: 100%;
                         border-radius: 5px;
@@ -807,8 +810,10 @@ footer {
                 padding: 40px 0px;
                 display: flex;
                 flex-flow: column;
+                align-items: center;
                 justify-content: center;
                 figure {
+                    max-width: 50%;
                     img {
                         max-width: 100%;
                         border-radius: 5px;
@@ -1160,6 +1165,7 @@ footer {
                 display: flex;
                 flex-flow: column;
                 justify-content: center;
+                align-items: center;
                 figure {
                     img {
                         max-width: 100%;
@@ -1201,6 +1207,7 @@ footer {
                 display: flex;
                 flex-flow: column;
                 justify-content: center;
+                align-items: center;
                 figure {
                     img {
                         max-width: 100%;
