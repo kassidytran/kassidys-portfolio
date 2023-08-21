@@ -281,9 +281,10 @@ article {
         .cs-img-container {
             padding: 40px 0px;
             display: flex;
-          
+            flex-flow: row;
             justify-content: space-evenly;
             figure {
+                max-width: 100%;
                 img {
                     max-width: 100%;
                     border-radius: 5px;
@@ -295,6 +296,31 @@ article {
                     text-align: center;
                 }
             }
+        }
+        .cs-img-container-1 {
+            padding: 40px 0px;
+            display: flex;
+            flex-flow: row;
+            justify-content: space-evenly;
+            figure {
+                max-width: 50%;
+                img {
+                    max-width: 100%;
+                    border-radius: 5px;
+                }
+                figcaption {
+                    font-family: $monospace;
+                    background-color: $primaryColor;
+                    color: $textColor;
+                    text-align: center;
+                }
+            }
+        }
+        .embed {
+            text-align: center;
+            iframe {
+            max-width: 100%;
+        }
         }
     }
     .cs-section-b {
@@ -342,9 +368,13 @@ article {
             margin: 50px;
             padding-left: 20px;
         }
-        iframe {
+        .embed {
+            text-align: center;
+            iframe {
             max-width: 100%;
         }
+        }
+        
     }
    
 }
@@ -866,6 +896,52 @@ footer {
     .about-more {
         padding: $sectionPadding;
     }
+    footer {
+        background-color: $lightColor;
+        padding: $sectionPaddingSm;
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        text-align: center;
+    
+        h1 {
+            font-size: 32px;
+            text-align: center;
+            
+        }
+        ul { 
+            padding: 0;
+            margin: 0;
+            list-style: none;
+            
+            display: flex;
+            flex-flow: column;
+            
+            li {
+                padding: 12px 20px;
+                display: flex;
+                flex-flow: column;
+                
+            }
+    
+            a {
+                font-family: $monospace;
+                font-size: 16px;
+                text-decoration: none;
+                padding: 12px 20px;
+                border: 2px solid transparent;
+                color: $textColor;
+            }
+            a:hover {
+                border: 2px dashed $secondaryColor;
+                border-radius: 5px;
+            }
+            a:active {
+                border: 2px dashed $secondaryColor;
+                border-radius: 5px;
+            }
+        }
+    }
 }
 
 
@@ -975,8 +1051,6 @@ footer {
             }
         }
     }
-
-
     article {
         .cs-title {
             padding: $sectionPaddingSm;
@@ -1229,6 +1303,53 @@ footer {
             }
             a:hover {
                 border: 1px dashed $accentColor;
+                border-radius: 5px;
+            }
+        }
+    }
+
+    footer {
+        background-color: $lightColor;
+        padding: $sectionPaddingSm;
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        text-align: center;
+    
+        h1 {
+            font-size: 32px;
+            text-align: center;
+            
+        }
+        ul { 
+            padding: 0;
+            margin: 0;
+            list-style: none;
+            
+            display: flex;
+            flex-flow: column;
+            
+            li {
+                padding: 12px 20px;
+                display: flex;
+                flex-flow: column;
+                
+            }
+    
+            a {
+                font-family: $monospace;
+                font-size: 14px;
+                text-decoration: none;
+                padding: 12px 20px;
+                border: 2px solid transparent;
+                color: $textColor;
+            }
+            a:hover {
+                border: 2px dashed $secondaryColor;
+                border-radius: 5px;
+            }
+            a:active {
+                border: 2px dashed $secondaryColor;
                 border-radius: 5px;
             }
         }
