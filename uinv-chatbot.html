@@ -5,20 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fira+Mono:wght@400;500;700&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Lexend:wght@100;200;300;400;500;600;700;800;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Livvic:ital,wght@0,400;0,500;0,600;0,700;0,900;1,400;1,500;1,600;1,700;1,900&family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
     <link rel="icon" type="image/x-icon" href="/media/index/logo.svg">
+    <link rel="icon" href="media/index/logo.svg">
     <title>Kassidy Tran</title>
 </head>
 <body>
-    <header id="header">
+    <header>
         <nav>
+            <a class="brand" href="index.html">Kassidy Tran</a>
             <ul>
-                <li class="logo"><a href="index.html"><img src="media/index/logo.svg"></a></li>
-                <li><a href="index.html">Work</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="https://drive.google.com/file/d/1Ky_oSqCa5I5t4T_uPhVkK18usQ5zlS6u/view?usp=sharing">Resume</a></li>
-                <li><a href="https://www.linkedin.com/in/kassidy-tran/">LinkedIn</a></li>
+                <li class="navlink"><a href="index.html">Work</a></li>
+                <li class="navlink"><a href="about.html">About</a></li>
+                <li class="navlink"><a href="https://drive.google.com/file/d/1Ky_oSqCa5I5t4T_uPhVkK18usQ5zlS6u/view?usp=sharing">Resume</a></li>
+                <li class="navlink"><a href="https://www.linkedin.com/in/kassidy-tran/">LinkedIn</a></li>
             </ul>
         </nav>
     </header>
@@ -26,26 +28,35 @@
     <article>
         <section class="cs-title">
             <h1>Carson: Nevada’s Unemployment Virtual Assistant</h1>
-            <h2>Exploring how AI can help the unemployed</h2>
-            <h3>UX & Visual Design, UX Research</h3>
-            <h3>March - April 2023</h3>
+            <p>Exploring how AI can help the unemployed</p>
+            <div class="cs-title-details">
+                <p>UX & Visual Design</p>
+                <p>March - April 2023</p>
+                <p>Team Members: Kassidy Tran, Tiffany Panlilio, Michelle Downey, Logan Gresko</p>
+            </div>
         </section>
 
-        <section class="img-container-uinv">
-            <img src="media/uinv-chatbot/uinv-article-cover.png">
+        <section class="uinv-cover-img">
+            <div class="cover-img-wrapper">
+                <img class="browser-mockup" src="media/uinv-chatbot/chatbot-browser-mockup.png">
+                <div class="mobile-mockups">
+                    <img src="media/uinv-chatbot/chatbot-mobile-mockup.png">
+                    <img src="media/uinv-chatbot/chatbot-mobile-mockup-2.png">
+                </div>
+            </div>
         </section>
 
         <section class="cs-overview">
             <h2>Overview</h1>
-            <p>In March of 2023, my team of four UX/UI design students were tasked with redesigning the Unemployment Insurance of Nevada (UINV) website. We designed an AI chat bot to replace the primary navigation of the UINV website and assist users in navigating the site as well as provide user support. This project spanned 6 weeks, starting off with a one week design sprint and ending with a presentation of a high-fidelity, responsive prototype. </p>
+            <p>In March of 2023, my team of four UX/UI design students were tasked with redesigning the Unemployment Insurance of Nevada (UINV) website. We designed an AI chat bot to replace the primary navigation of the UINV website and assist users in navigating the site as well as provide user support. This project spanned 6 weeks, starting off with a one week design sprint and ending with a presentation of a high-fidelity, responsive prototype.</p>
             <div class="cs-details-container">
                 <div class="roles-responsibilities">
                     <h2>Roles & Responsibilities</h2>
                     <ul>
-                        <li>Drafting a user journey and storyboard to empathize with users </li>
-                        <li>Analyze insights gathered from user research</li>
-                        <li>Iterate chat bot responses with varying tones, vocabulary, and amount of information using ChatGPT</li>
-                        <li>Creating high-fidelity prototypes for presentation</li>
+                        <li>Drafted a user persona and storyboard to empathize with users</li>
+                        <li>Analyzed insights gathered from user research</li>
+                        <li>Iterated chat bot responses with varying tones, vocabulary, and amount of information using ChatGPT</li>
+                        <li>Created high-fidelity prototypes for presentation</li>
                     </ul>
                 </div>
                 <div class="tools">
@@ -54,7 +65,7 @@
                         <li>Figma</li>
                         <li>ChatGPT</li>
                         <li>Google Workspace</li>
-                        <li>Zoom (for user interviews and communication)</li>
+                        <li>Zoom</li>
                     </ul>
                 </div>
             </div>
@@ -64,55 +75,66 @@
             <h2>Starting off with a design sprint</h2>
             <p>My team and I started off with a one-week design sprint. We each conducted a cognitive walkthrough of the <a href="https://ui.nv.gov/css.html">Nevada Unemployment Insurance Claim Filing System (UINV) website</a>, taking note of these major usability issues:</p>
             <ul>
-                <li><span style="font-weight:500">Risk of cognitive overload</span> for users due to overwhelming amount of links and texts</li>
-                <li><span style="font-weight:500">Little hierarchal distinction</span> between content makes the site difficult to navigate</li>
-                <li><span style="font-weight:500">Poor legibility</span> due to small text size and harsh contasting colors</li>
-                <li><span style="font-weight:500">Unwelcoming user experience</span> due to cold color palette</li>
+                <li><span style="font-weight:700">Risk of cognitive overload</span> for users due to overwhelming amount of links and texts</li>
+                <li><span style="font-weight:700">Little hierarchal distinction</span> between content makes the site difficult to navigate</li>
+                <li><span style="font-weight:700">Poor legibility</span> due to small text size and harsh contasting colors</li>
+                <li><span style="font-weight:700">Unwelcoming user experience</span> due to cold color palette</li>
             </ul>
-            <div class="cs-img-container">
+            <div class="figure-wrapper">
                 <figure>
                     <img src="media/uinv-chatbot/uinv-home.png">
                     <figcaption>Current user interface for the UINV website</figcaption>
                 </figure>
             </div>
-            <p>To avoid bias in our assessnments, we also observed two users who have previously filed for unemployment interact with the website. Both users mentioned <span style="font-weight:500">feeling stressed</span> during unemployment and <span style="font-weight:500">wanting to talk to someone</span> who can help. </p>
-            <p>Based on user feedback, our design goals were defined as such: </p>
+            <p>To avoid bias in our assessnments, we interviewed two users who have previously filed for unemployment. Both users mentioned <span style="font-weight:700">feeling stressed</span> during unemployment and <span style="font-weight:700">wanting to talk to someone</span> who can help. </p>
+            <p>Based on these insights, our design goals were defined as such: </p>
             <ul>
                 <li>Simplify the navigation of the website</li>
                 <li>Create a more welcoming atmosphere for users</li>
             </ul>
-            <p>A user persona was quickly created to prepare our team for brainstorming solutions - we needed a concrete description of a user who needed these problems to be solved. Then, our problem statement was generated, inspired by our user persona. </p>
-            <div class="cs-img-container">
-                <figure>
-                    <img src="media/uinv-chatbot/user-persona.png">
-                    <figcaption>User persona for our redesign's targeted user base</figcaption>
-                </figure>
+            <p>We created a user persona and problem statement to maintain a concrete description of a user who needed these problems to be solved. </p>
+            <div class="figure-container">
+                <div class="figure-wrapper">
+                    <figure>
+                        <img src="media/uinv-chatbot/user-persona-uinv.png">
+                    </figure>
+                </div>
+                <p class="problem-statement"><span style="background-color:#D4E6F1">“I am a former warehouse manufacturing business employee. I am trying to apply for unemployment benefits for some stability and the ability to financially support my family, while looking for a new job, but I’m not sure what unemployment benefits I am eligible for. I’m dreading applying because I’m expecting the application process to be long and confusing, because I have never had to apply for unemployment before, which makes me feel overwhelmed!”</span></p>
             </div>
-            <p class="callout">“I am a former warehouse manufacturing business employee. I am trying to apply for unemployment benefits for some stability and the ability to financially support my family, while looking for a new job, but I’m not sure what unemployment benefits I am eligible for. I’m dreading applying because I’m expecting the application process to be long and confusing, because I have never had to apply for unemployment before, which makes me feel overwhelmed!”</p>
-            <p>Our proposed solution to this problem was to design a chatbot, which provides users with a welcoming personality to chat and find general assistance. We then came up with a storyboard to get an idea of the user flow and interactions with the chatbot.</p>
-            <div class="cs-img-container">
+            <p>Our proposed solution to these problems was to design a chatbot, which would address the following issues: </p>
+            <ul>
+                <li>Provide users with an immediate and easy to access source of assistance to ease anxiety</li>
+                <li>Answer general questions and reduce traffic to call centers</li>
+            </ul>
+            <p>We then came up with a storyboard to empathize with the user's perspective when interacting with the chatbot.</p>
+            <div class="figure-wrapper">
                 <figure>
                     <img src="media/uinv-chatbot/storyboard-uinv.png">
                     <figcaption>Storyboard showcasing how a user might interact with our chatbot</figcaption>
                 </figure>
             </div>
-            <p>While conducting usability testing with a low-fidelity prototype, we asked users how they might interact with the chatbot to file a claim. Insights from our testing revealed that users: </p>
+            <p>We conducted a usability test with a low-fidelity prototype and asked users how they might interact with the chatbot to file a claim. Insights from our testing revealed that users:</p>
             <ul>
                 <li>Found the chatbot more efficient in navigating the website</li>
-                <li>Wished the chatbot had more of a personality</li>
+                <li>Wished the chatbot had more of a personality and felt less robotic</li>
                 <li>Wanted to use the chatbot to speak to a human customer service representative</li>
                 <li>Preferred to use the chatbot if phone lines for the call center were busy</li>
             </ul>
-
         </section>
 
         <section class="cs-section-b">
             <h2>Creating a chatbot conversation flow</h2>
-            <p>The results of our design sprint revealed the chatbot as favorable among users. Based on the insights from user testing, we built upon this idea: </p>
-            <p class="callout">What if we designed our chatbot to be a friendly persona to talk to and help users navigate the unemployment claim process?</p>
-            <p>Our chatbot would act as the primary method of navigation on the website. In order to achieve this while maintaining a welcoming personality, we decided to design the chatbot with artificial intelligence (AI) in mind. An AI-chatbot could provide information to the user in a more natural and personable manner. </p>
-            <p>My team conducted a content audit of the current information on the website and I categorized the content by topic, and brainstormed potential questions or statements that users might input when using the chatbot. I entered information found on the website into ChatGPT to ensure the AI would provide accurate information in responses. Finally, I compiled both the user inputs and appropriate responses into various conversation sequences, so the team could visualize how the user might interact with our chatbot in conversation. </p>
-            <div class="cs-img-container">
+            <p>The results of our design sprint revealed the chatbot as favorable among users. Seeing how users preferred to use the chatbot to navigate, we thought to explore the idea of having the chatbot double as the navigation.</p>
+            <h3>Introducing AI</h3>
+            <p>With the chatbot doubling as user support and primary navigation of the website, we decided to design the chatbot with artificial intelligence (AI) in mind. An AI-chatbot could provide information to the user in a more natural and personable manner.</p>
+            <p>To create a visualization of our chatbot conversational flow, I followed these steps:</p>
+            <ol>
+                <li>Conducted content audit of current website content and categorized content by topic</li>
+                <li>Brainstormed potential user inputs based on these topics and information</li>
+                <li>Entered website information into ChatGPT to train the AI to respond accurately</li>
+                <li>Compiled user inputs and ChatGPT-generated responses into various conversation sequences in FigJam</li>
+            </ol>
+            <div class="figure-wrapper">
                 <figure>
                     <img src="media/uinv-chatbot/chatbot-flow.png">
                     <figcaption>Potential conversation flows between the user and the AI chatbot, organized by topic. Created to help our team visualize how a user might engage in conversation with the chatbot.</figcaption>
@@ -122,126 +144,113 @@
 
         <section class="cs-section-a">
             <h2>Finding the right voice for our chatbot</h2>
-            <p>I knew that personality and delivery of information was crucial for the success of our chatbot in alleviating stress in anxious users. User attitudes towards the chatbot could differ based on the language and tone of voice used. In order to find the right voice for our chatbot, I had ChatGPT generate two responses differing by tone.</p>
-            <p class="callout">Would users prefer responses in a <span style="font-weight:500">friendly</span> tone or a <span style="font-weight:500">professional</span> tone?</p>
-            <p>Based on our user research insights, we hypothesized that users would prefer a friendly, easygoing response compared to a more professional, serious response. </p>
-            <div class="cs-img-container">
-                <figure>
-                    <img src="media/uinv-chatbot/ab-test.png">
-                    <figcaption>Five user inputs followed by two different versions of responses, one with a friendly tone and one with a professional tone. The friendly response uses simpler language, more encouraging phrases and exclamation marks, while the professional response provides more detailed information with serious language.</figcaption>
-                </figure>
+            <p>I knew that personality and delivery of information was crucial for the success of our chatbot in alleviating stress in anxious users. User attitudes towards the chatbot could differ based on the language and tone of voice used. In order to find the right voice for our chatbot, I had ChatGPT generate two responses differing by tone. </p>
+            <p>We conducted an A/B test with five different responses, differing between a professional tone and a friendly tone.</p>
+            <div class="comparisons-container">
+                <div class="var-A">
+                    <h3>Variable A - Friendly Tone</h3>
+                    <ul>
+                        <li>Simpler language</li>
+                        <li>More encouraging diction and punctuation</li>
+                    </ul>
+                </div>
+                <div class="var-B">
+                    <h3>Variable B - Professional Tone</h3>
+                    <ul>
+                        <li>Serious language</li>
+                        <li>More detailed information</li>
+                    </ul>
+                </div>
             </div>
+            <p> Based on our user research insights, we hypothesized that users would prefer a friendly, easygoing response compared to a more professional, serious response.</p>
+            <h3>A/B testing results</h3>
             <p>Results differed from our expectations: users were split between their preferences, so we needed to compromise.</p>
-            <div class="cs-img-container">
+            <div class="figure-wrapper">
                 <figure>
                     <img src="media/uinv-chatbot/ab-test-results.png">
                 </figure>
             </div>
-
-            <div class="cs-img-container">
-                <div>
-                    <h3>Friendly Tone</h3>
-                    <h4>Pros</h4>
+            <div class="comparisons-container">
+                <div class="var-A">
+                    <h3>Variable A - Friendly Tone</h3>
+                    <h4>What users liked:</h4>
                     <ul>
                         <li>Less intimidating</li>
                         <li>Easier to digest due to shorter responses</li>
                     </ul>
-                    <h4>Cons</h4>
+                    <h4>What users did not like:</h4>
                     <ul>
                         <li>Sounds disingenuous, fake </li>
                         <li>Customer service fluff</li>
                         <li>Unreliable, vague information</li>
                     </ul>
                 </div>
-                <div>
-                    <h3>Professional Tone</h3>
-                    <h4>Pros</h4>
+                <div class="var-B">
+                    <h3>Variable B - Professional Tone</h3>
+                    <h4>What users liked:</h4>
                     <ul>
                         <li>Appears more reliable</li>
                         <li>Expected of a government website</li>
                         <li>More detailed information</li>
                     </ul>
-                    <h4>Cons</h4>
+                    <h4>What users did not like:</h4>
                     <ul>
                         <li>Visually overwhelming due to longer responses</li>
                     </ul>
                 </div>
             </div>
-            <p>Based on these gathered insights, we proposed a compromise: our chatbot will use a professional tone of voice, and the long responses will be visually broke up into more easily digestible chunks of text using message bubbles. The user interface will also communicate a friendly atmosphere. </p> 
+            <p>We proposed a compromise: our chatbot will use a professional tone of voice, and the long responses will be visually broke up into more easily digestible chunks of text using message bubbles. The user interface will also communicate a friendly atmosphere to balance the more serious language.</p> 
         </section>
             
-
-
-
         <section class="cs-section-b">
             <h2>Iterating layouts and applying style</h2>
-            <div class="cs-img-container">
+            <div class="figure-wrapper">
                 <figure>
-                    <img src="media/uinv-chatbot/style-guide.png">
+                    <img src="media/uinv-chatbot/uinv-style-guide.png">
                     <figcaption>Style guide for the UINV virtual assistant chat bot</figcaption>
                 </figure>
             </div>
-            <p>We wanted our chatbot to be approachable, so we chose a bluebird (Nevada’s state bird), who we named Carson (after the state capital), to visually represent a friendly persona. By using a non-human persona for our chatbot, we wanted the user to feel like they are still receiving the assistance they need without needing to feel judged for their circumstances by another person. The blue and yellow color palette communicates Carson’s trustworthiness and eagerness to help, and the rounded corners softens the design and allows Carson to appear friendlier. </p>
-            <div class="cs-img-container">
+            <p>We chose a bluebird as our chatbot's avatar, inspired by Nevada's state bird, and named it Carson, after Nevada's state capital. This allowed us to avoid the impersonal and robotic representation of a typical chatbot. </p>
+            <p>By using a non-human persona for our chatbot, we wanted the user to feel like they are still receiving the assistance they need without needing to feel judged for their circumstances by another person. </p>
+            <p>The blue and yellow color palette communicates Carson’s trustworthiness and eagerness to help, and the rounded corners softens the design and allows Carson to appear friendlier.</p>
+            <div class="figure-wrapper">
                 <figure>
-                    <img src="media/uinv-chatbot/desktop-prototype-home.png">
-                    <figcaption>Desktop - Home Screen</figcaption>
-                </figure>
-                <figure>
-                    <img src="media/uinv-chatbot/desktop-prototype-chat-open.png">
-                    <figcaption>Desktop - Open Chat Window</figcaption>
-                </figure>
-            </div>
-            <div class="cs-img-container">
-                <figure>
-                    <img src="media/uinv-chatbot/mobile-prototype-start.png">
-                </figure>
-                <figure>
-                    <img src="media/uinv-chatbot/mobile-prototype-response.png">
+                    <div class="mobile-mockup">
+                        <img src="media/uinv-chatbot/chatbot-mobile-mockup.png">
+                        <img src="media/uinv-chatbot/chatbot-mobile-mockup-2.png">
+                    </div>
+                    <figcaption>Mobile high-fidelity prototype</figcaption>
                 </figure>
             </div>
-            <p>Unlike other chatbot designs, we chose to enclose our chatbot in a large popup window. This was decided upon for a variety of reasons: </p>
+            <div class="figure-wrapper">
+                <figure>
+                    <img src="media/uinv-chatbot/chatbot-browser-mockup.png">
+                    <figcaption>Desktop high-fidelity prototype</figcaption>
+                </figure>
+            </div>
+            <p>Compared to standard chatbot designs, we chose to enclose our chatbot in a large pop-up window. This was decided upon for a variety of reasons:</p>
             <ul>
-                <li>The <span style="font-weight:500">chatbot will also act as a navigation system</span> for the website</li>
-                <li><span style="font-weight:500">No products or important information is displayed on the home page</span>, so it is unlikely users will need to view the home page and use the chatbot simultaneously</li>
-                <li>We can <span style="font-weight:500">improve legibility and interaction expereince</span> for users if we maximize the available space for the chat window</li>
+                <li>Chatbot also acts as a navigation system for the website</li>
+                <li>‍No products or important information is displayed on the home page, so it is unlikely users will need to view the home page and use the chatbot simultaneously</li>
+                <li>Improving legibility and interaction experience for users by maximizing available space for the chat window</li>
             </ul>
         </section>
 
         <section class="cs-section-a">
-            <h2>Creating an interactive prototype</h2>
-            <p>Because of our limited time constraints, we decided to focus on developing one of the two responsive designs into a complete prototype. Secondary user research revealed that the average person in Nevada filing for unemployment are: </p>
-            <ul>
-                <li>Have obtained less than a high school education</li>
-                <li>Identifies as a member of the Black or Native American communities</li>
-                <li>People with disabilities between the ages of 20-64</li>
-            </ul>
-            <p>Due to these insights, we concluded that a mobile device is more accessible than a desktop computer for these users, as it is more cost effective and easier to use, therefore we focused on developing a high-fidelity prototype for presentation. </p>
-            <div class="cs-img-container">
+            <h2>Interactive prototype</h2>
+            <div class="figure-wrapper">
                 <figure>
                     <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FoyBq38k6oVZtj6qUVMuG35%2FUINV-Chat-Bot%3Fpage-id%3D1%253A1575%26type%3Ddesign%26node-id%3D11-3227%26viewport%3D-43%252C-1703%252C0.41%26t%3DpvxrtdhdSk1kgHil-1%26scaling%3Dscale-down%26starting-point-node-id%3D11%253A3227%26mode%3Ddesign" allowfullscreen></iframe>
-                    <figcaption>High-fidelity interactive prototype</figcaption>
                 </figure>
             </div>
         </section>
         
         <section class="cs-section-b">
             <h2>Learning opportunities</h2>
-            <p>This case study provided an excellent opportunity to practice visual design, and how to ensure each design choice is a conscious decision. Visual design can evoke certain emotions within the user, which affects the overall user experience of using the website or app. </p>
+            <p>This case study provided an excellent opportunity to practice visual design, and how to ensure each design choice is a conscious decision. Visual design can evoke certain emotions within the user, which affects the overall user experience of using the website or app.</p>
             <p>Additionally, this was the first time I was able to practice using AI in the design process. I believe that AI tools like ChatGPT are beneficial in streamlining the design process, and am looking forward to exploring other AI tools for design projects in the future. </p>
+            <p>If I had more time to work on this project, I would absolutely want to complete further testing of our prototype and determine whether or not our visual design eased user anxiety or not. Furthermore, I also wished that we had the opportunity to test more for accessibility of our design and better adhere to the WCAG standards.</p>
         </section>
-
-        <section class="cs-section-a">
-            <h2>Presentation Slides</h2>
-            <div class="cs-img-container">
-                <figure>
-                    <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vQHeUN1kVoV65RY40D6ezILGG4458Y3hLyVlEgEQg88ZVODQJUDwRdDY017t0zmt7TkeUvrPMoV2k-N/embed?start=false&loop=false&delayms=3000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
-                </figure>
-            </div>
-        </section>
-
-
-
     </article>
     
 

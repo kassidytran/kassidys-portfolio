@@ -5,33 +5,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fira+Mono:wght@400;500;700&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Lexend:wght@100;200;300;400;500;600;700;800;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Livvic:ital,wght@0,400;0,500;0,600;0,700;0,900;1,400;1,500;1,600;1,700;1,900&family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
     <link rel="icon" type="image/x-icon" href="/media/index/logo.svg">
+    <link rel="icon" href="media/index/logo.svg">
     <title>Kassidy Tran</title>
 </head>
 <body>
-    <header id="header">
+    <header>
         <nav>
+            <a class="brand" href="index.html">Kassidy Tran</a>
             <ul>
-                <li class="logo"><a href="index.html"><img src="media/index/logo.svg"></a></li>
-                <li><a href="index.html">Work</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="https://drive.google.com/file/d/1Ky_oSqCa5I5t4T_uPhVkK18usQ5zlS6u/view?usp=sharing">Resume</a></li>
-                <li><a href="https://www.linkedin.com/in/kassidy-tran/">LinkedIn</a></li>
+                <li class="navlink"><a href="index.html">Work</a></li>
+                <li class="navlink"><a href="about.html">About</a></li>
+                <li class="navlink"><a href="https://drive.google.com/file/d/1Ky_oSqCa5I5t4T_uPhVkK18usQ5zlS6u/view?usp=sharing">Resume</a></li>
+                <li class="navlink"><a href="https://www.linkedin.com/in/kassidy-tran/">LinkedIn</a></li>
             </ul>
         </nav>
     </header>
 
+
+
+
+
+
+    
     <article>
         <section class="cs-title">
             <h1>Yelp Community</h1>
-            <h2>Using social relationships to communicate authenticity in online reviews</h2>
-            <h3>Product & UX Design, UX Research</h3>
-            <h3>February - March 2023</h3>
+            <p>Using social relationships to communicate authenticity in online reviews</p>
+            <div class="cs-title-details">
+                <p>Product & UX Design</p>
+                <p>February - March 2023</p>
+                <p>Team Members: Kassidy Tran, Jason Lopez, Sofia Da Silva, Judy Roh, Vanessa Espinoza</p>
+            </div>
         </section>
 
-        <section class="img-container">
+        <section class="yelp-cover-img">
             <img src="media/yelp-community/home.png">
             <img src="media/yelp-community/activity.png">
             <img src="media/yelp-community/profile.png">
@@ -39,15 +50,15 @@
 
         <section class="cs-overview">
             <h2>Overview</h1>
-            <p>In Feburary 2023, we were tasked with a design challenge that required us to connect a traveler to a service provider. Our solution was to this challenge was Yelp Community, an extension of the Yelp mobile app, designed to connect users, build users’ trust in online reviews, and increase appeal of the app to a younger user demographic. My team and I completed this project over 5 weeks, starting with user research and ending with our first round of usability testing. </p>
+            <p>In February 2023, we were tasked with a design challenge that required us to connect a traveler to a service provider. Our solution was to this challenge was to re-design Yelp's social platform in order to connect users, build trust in online reviews, and increase appeal of the app to a younger user demographic. We completed this project within 5 weeks, starting with user research and ending with our first round of usability testing.</p>
             <div class="cs-details-container">
                 <div class="roles-responsibilities">
                     <h2>Roles & Responsibilities</h2>
                     <ul>
-                        <li>Conducting user interviews and secondary user research</li>
-                        <li>Analyzing user insights from user interviews, survey results, and secondary user research</li>
-                        <li>Building mid-fidelity prototypes in Figma for usability testing</li>
-                        <li>Creating slide deck for final presentation</li>
+                        <li>Conducted user interviews and secondary user research</li>
+                        <li>Analyzed user insights from user interviews, survey results, and secondary user research</li>
+                        <li>Built mid-fidelity prototypes in Figma for usability testing</li>
+                        <li>Created slide deck for final presentation</li>
                     </ul>
                 </div>
                 <div class="tools">
@@ -69,13 +80,13 @@
                 <li>They want to share their favorite spots to visit with others on social media</li>
             </ul>
             <p>These initial assumptions led us to what we believed was the problem:</p>
-            <p class="callout">How might we create a social media platform that encourages travelers to explore local destinations with visual information?</p>
+            <p class="problem-statement"><span style="background-color:#D4E6F1">How might we create a social media platform that encourages travelers to explore local destinations with visual information?</span></p>
             <p>Jumping on the trends at the time, our team originally thought to present visual information about a location of interests in the form of short-form video content. </p>
         </section>
 
         <section class="cs-section-b">
             <h2>Understanding our users</h2>
-            <p>We drafted two behavioral personas: a content creator and a typical viewer. However, after five user interviews and additional survey responses, we realized the problem space and users we were targeting didn’t need a solution. </p>
+            <p>We drafted two behavioral personas: a content creator and a typical viewer. However, after five user interviews and additional survey responses, we realized the problem space and users we were targeting didn’t need a solution.</p>
             <p>Major issues with our travel app concept included:</p>
             <ul>
                 <li><strong>Lack of trust</strong> in online content</li>
@@ -94,11 +105,15 @@
                 </figure>
             </div>
             -->
-            <p>Furthermore, key insights in our research highlighted that social media users place great significance on <strong>establishing trust via close relationships</strong> and <strong>conducting their own research</strong> prior to traveling to a location or purchasing a product. </p>
-            <div class="cs-img-container">
+            <p>Key insights in our research highlighted that social media users place great significance on <strong>establishing trust via close relationships</strong> and <strong>conducting their own research</strong> prior to traveling to a location or purchasing a product.</p>
+            <div class="figure-wrapper">
                 <figure>
-                    <img src="media/yelp-community/affinity-map.png">
-                    <figcaption>A quick affinity mapping session highlighted three important themes: trust, sharing a close relationship with others, and users conducting their own prior research before trying something new.  </figcaption>
+                    <div class="cs-img-wrapper">
+                        <img src="media/yelp-community/trust-afm.png">
+                        <img src="media/yelp-community/close-relationship-afm.png">
+                        <img src="media/yelp-community/prior-research-afm.png">
+                    </div>
+                    <figcaption>A quick affinity mapping session highlighted three important themes: trust, sharing a close relationship with others, and users conducting their own prior research before trying something new.</figcaption>
                 </figure>
             </div>
             <p>Survey data and secondary research revealed: </p>
@@ -113,87 +128,87 @@
 
         <section class="cs-section-a">
             <h2>Redefining the problem</h2>
-            <p>Our mistake was making assumptions about the user before conducting appropriate user research. The problem wasn’t that users need a new social media app for travel recommendations: users had more issues with the <span style="font-weight: 500">trustworthiness of recommendations</span> rather than the <span style="font-weight: 500">need for recommendations.</span></p>
-            <p class="callout">How might we create a trust-based community that sets appropriate expectations and reduces the time users spend on prior research on new locations?</p>
-            <p>We decided to address the issues of untrustworthy reviews on the Yelp app by improving the social activity features on the app. Our goals aimed to improve trust in Yelp reviews to appeal to a younger audience and expand Yelp’s current user base. Most users share similar tastes as their friends, therefore we wanted to use this social relationship to our advantage. If users already know what their friends’ like or dislike, they can form more accurate expectations of whether or not they themselves will like a business or not. Using this social relationship, we can improve trust in online Yelp reviews if the users know the tastes of the reviewer personally. </p>
+            <p>Our mistake was making assumptions about the user before conducting appropriate user research. Users had more issues with the <span style="font-weight: 500">trustworthiness of recommendations</span> rather than the <span style="font-weight: 500">need for recommendations.</span></p>
+            <p class="problem-statement"><span style="background-color:#D4E6F1">How might we create a trust-based community that sets appropriate expectations and reduces the time users spend on prior research on new locations?</span></p>
+            <p>We decided to address the issues of untrustworthy reviews on the Yelp app by improving the social activity features on the app. Our new goals were defined to: </p>
+            <ul>
+                <li>Improve trust in Yelp reviews </li>
+                <li>Appeal to a younger audience and expand Yelp's current user base</li>
+            </ul>
+            <p>We wanted to use our users' social relationships to our advantage. If users already know what their friends’ like or dislike, they can form more accurate expectations of whether or not they themselves will like a business or not. By reading their friends' words, we can improve trust in reviews.</p>
             <p>Our behavioral archetypes were iterated to reflect our users’ needs and the company’s goals: </p>
-            <div class="cs-img-container">
-                <figure>
+            <div class="figure-wrapper">
+                <figure class="yelp-personas">
                     <img src="media/yelp-community/archetype-user-a-iterated.png">
                     <figcaption>User A is a Yelp user, who wants to see more updates on what businesses friends are supporting</figcaption>
                 </figure>
-                <figure>
+                <figure class="yelp-personas">
                     <img src="media/yelp-community/archetype-user-b-iterated.png">
                     <figcaption>User B is Yelp, who wants to expand their user base</figcaption>
                 </figure>
             </div>
-        </section>
-
-        <section class="cs-section-b">
-            <h2>Ideating the solution</h2>
             <p>Following a rapid brainstorming session, my team and I determined three features that we considered necessary to improve the user experience of the app: </p>
             <ul>
                 <li>Establishing a clear path to the activity page </li>
                 <li>Simplifying the process for finding and adding friends </li>
                 <li>Provide options for profile privacy so users can control who can see the content they post </li>
             </ul>
-            <p>Learning from our previous mistakes of not considering the user’s perspective, my team and I created a user journey storyboard to empathize with a typical user who may interact with this design: </p>
-            <div class="cs-img-container">
-                <figure>
-                    <img src="media/yelp-community/user-journey-yelp.png">
-                    <figcaption>User journey map detailing how a typical user might interact with our design. Follows the user's goals, needs, motivations, and emotions.</figcaption>
+            <p>Learning from our previous mistakes of not considering the user’s perspective, my team and I created a storyboard to empathize with a typical user who may interact with this design.</p>
+            <div class="figure-wrapper">
+                <figure class="storyboard">
+                    <img src="media/yelp-community/yelp-storyboard.png">
+                    <figcaption>Storyboard of one potential user interacting with the product</figcaption>
                 </figure>
             </div>
         </section>
 
-        <section class="cs-section-a">
+        <section class="cs-section-b">
             <h2>Creating a prototype for testing</h2>
             <h3>Redesigning the menu bar content</h3>
             <p>We re-organized the bottom navigation menu, replacing the “More” menu item with a “Community” menu item. The contents under the previous “More” menu item were moved to the profile page. This adds a clear, easily noticeable pathway to the social page of the app.</p>
-            <div class="cs-img-container">
-                <figure>
-                    <img src="media/yelp-community/og-menu-bar.png">
+            <div class="figure-wrapper">
+                <figure class="yelp-navbar">
+                    <img src="media/yelp-community/navbar-og.png">
                     <figcaption>Original navigation bar in the current Yelp app</figcaption>
                 </figure>
-                <figure>
-                    <img src="media/yelp-community/redesigned-menu-bar.png">
+                <figure class="yelp-navbar">
+                    <img src="media/yelp-community/navbar-redesigned.png">
                     <figcaption>Modified navigation bar replacing “More” with “Community”</figcaption>
                 </figure>
             </div>
 
             <h3>Designing a new community page</h3>
-            <p>Our new “Community” page was divided into two sections: an “Activity” section and “Talk” section. In the Activity section, users can view their friends’ reviews, check-ins, and social activity. The “Talk” section brings out an existing Yelp social feature that had been previously located at the bottom of the “More” page. Here, users can join forums to talk about different topics, or socialize with other Yelp users in their local area.</p>
-            <div class="cs-img-container">
-                <figure>
+            <p>Our new “Community” page was divided into two sections: an “Activity” section and “Talk” section.</p>
+            <p>In the Activity section, users can view their friends’ reviews, check-ins, and social activity.</p>
+            <div class="figure-wrapper">
+                <figure class="mobile-mockup">
                     <img src="media/yelp-community/activity.png">
-                    <figcaption>Activity page for viewing and interacting with your friends' reviews</figcaption>
                 </figure>
-                <figure>
+            </div>
+            <p>The Talk section brings out an existing Yelp social feature that had been previously located at the bottom of the More page. Here, users can join forums to talk about different topics, or socialize with other Yelp users in their local area.</p>
+            <div class="figure-wrapper">
+                <figure class="mobile-mockup">
                     <img src="media/yelp-community/talk.png">
-                    <figcaption>Talk page for socializing with the local community and getting reocommendations</figcaption>
                 </figure>
             </div>
 
             <h3>Adding privacy options when writing a review</h3>
-            <p>Because many users mentioned that they prefered to post just for their close friends and family rather than for strangers, we added an option for adjusting review visibility. A review that is marked private before posting will be seen only by friends of the user, and the star rating will not contribute to the businesses public star rating. </p>
-            <div class="cs-img-container-1">
-                <figure>
+            <p>Because many users mentioned that they preferred to post just for their close friends and family rather than for strangers, we added an option for adjusting review visibility. A review that is marked private before posting will be seen only by friends of the user, and the star rating will not contribute to the businesses public star rating.</p>
+            <div class="figure-wrapper">
+                <figure class="mobile-mockup">
                     <img src="media/yelp-community/writing-review.png">
-                    <figcaption>Private reviews will be seen only by friends of the user and the star rating will not be included in the business's public rating.</figcaption>
                 </figure>
             </div>
             
 
             <h3>Simplifyng the user flow for adding friends</h3>
-            <p>The user flow to add friends was also modified to include less clicks. Now, each user has their own unique username. Users can add friends by going to the profile page and clicking on the + icon in the upper right corner, then search their friends’ usernames to add them. This method of searching by username is more efficient and intuitive to seasoned social media users, compared to the current process, in which users needed to search by first name and last initial, then filter by city.</p>
-            <div class="cs-img-container">
-                <figure>
+            <p>The user flow to add friends was also modified to include less clicks. Now, each user has their own unique username. Users can add friends by going to their profile page and clicking on the + icon, then search their friends’ usernames to add them. This method of searching by username is more efficient and intuitive to seasoned social media users, compared to the current process, in which users needed to search by first name and last initial, then filter by city.</p>
+            <div class="figure-wrapper">
+                <figure class="mobile-mockup">
                     <img src="media/yelp-community/profile.png">
-                    <figcaption>"Add friend" icon is now available on the profile page</figcaption>
                 </figure>
-                <figure>
+                <figure class="mobile-mockup">
                     <img src="media/yelp-community/add-friend.png">
-                    <figcaption>Users can search up their friends' specific usernames and send a friend request with ease</figcaption>
                 </figure>
             </div>
             <h3>Interactive Prototype</h3>
@@ -203,7 +218,7 @@
             </div>
         </section>
 
-        <section class="cs-section-b">
+        <section class="cs-section-a">
             <h2>User Testing and Next Steps</h2>
             <p>When testing our prototype, we found success in that users felt: </p>
             <ul>
@@ -213,23 +228,16 @@
             </ul>
             <p>However, there were also a few areas for improvements: </p>
             <ul>
-                <li>The word “Community” was too ambiguous in meaning - this needed to be updated to avoid confusion towards the content of the social tab</li>
+                <li>The name“Community” was too ambiguous - some users found the content on the page unexpected</li>
                 <li>Add friends was not communicated clearly - iconography must be updated for clarity and this function should be included on multiple pages including the Community page</li>
                 <li>Some users initially clicked on the search bar on the home page to search for friends’ reviews - highlighting freinds’ reviews in search results may be an interesting direction to explore in future iterations</li>
             </ul>
         </section>
 
-        <section class="cs-section-a">
+        <section class="cs-section-b">
             <h2>Learning opportunities</h2>
             <p>As my first UX design challenge, I learned many crucial lessons about the design process and moving on from failures. While my team and I inially started off by defining the problem and ideating solutions before doing adequate research, we realized that we needed to take a step back to analyze user insights and redefine our problem space. Listening to our users led us back on track to designing a solution that would actually target users’ pain points. </p>
-            <p>Likewise, I also learned a lot about desgining a product from a business standpoint. While it is important to consider the user’s perspective, my team and I also needed to consider the costs and benefits of this design to Yelp as a company. I constantly asked myself, “How might we incentivize users who don’t normally use Yelp to actually use the app?” In this way, I learned the importance of viewing the problem space from different perspectives and designing a solution that addresses both stakeholder and user needs. </p>
-        </section>
-            
-        <section class="cs-section-b">
-            <h2>Presentation Slides</h2>
-            <div class="embed">
-                <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vRkDYqP2DCeSfa6P4lz3fP66S35PJPJgVrZqG_gAJnaRviFtbROIjjPgY5oUeQa8ipnlDTiup8pdDkX/embed?start=false&loop=true&delayms=5000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
-            </div>
+            <p>Likewise, I also learned a lot about designing a product from a business standpoint. While it is important to consider the user’s perspective, my team and I also needed to consider the costs and benefits of this design to Yelp as a company. I constantly asked myself, “How might we incentivize users who don’t normally use Yelp to actually use the app?” In this way, I learned the importance of viewing the problem space from different perspectives and designing a solution that addresses both stakeholder and user needs. </p>
         </section>
 
 

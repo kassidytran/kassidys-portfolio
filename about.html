@@ -5,8 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fira+Mono:wght@400;500;700&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Lexend:wght@100;200;300;400;500;600;700;800;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Livvic:ital,wght@0,400;0,500;0,600;0,700;0,900;1,400;1,500;1,600;1,700;1,900&family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
     <link rel="icon" type="image/x-icon" href="/media/index/logo.svg">
     <link rel="icon" href="media/index/logo.svg">
     <title>Kassidy Tran</title>
@@ -14,12 +15,12 @@
 <body>
     <header>
         <nav>
+            <a class="brand" href="index.html">Kassidy Tran</a>
             <ul>
-                <li class="logo"><a href="index.html"><img src="media/index/logo.svg"></a></li>
-                <li><a href="index.html">Work</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="https://drive.google.com/file/d/1Ky_oSqCa5I5t4T_uPhVkK18usQ5zlS6u/view?usp=sharing">Resume</a></li>
-                <li><a href="https://www.linkedin.com/in/kassidy-tran/">LinkedIn</a></li>
+                <li class="navlink"><a href="index.html">Work</a></li>
+                <li class="navlink"><a href="about.html">About</a></li>
+                <li class="navlink"><a href="https://drive.google.com/file/d/1Ky_oSqCa5I5t4T_uPhVkK18usQ5zlS6u/view?usp=sharing">Resume</a></li>
+                <li class="navlink"><a href="https://www.linkedin.com/in/kassidy-tran/">LinkedIn</a></li>
             </ul>
         </nav>
     </header>
@@ -27,15 +28,20 @@
     <section class="about-intro">
         <img src="media/about/about-img.png">
         <div class="about-intro-text">
-            <h1>Hi, nice to meet you!</h1>
-            <p>I’m Kassidy, a UX/UI designer based in Orange County, CA. I recently graduated from the UCI UX/UI Design Boot Camp program. Before entering the design field, I graduated from UCLA with a Biology, B.S., with a pre-med focus. I am now transitioning from a career in health sciences to a career in tech and design. When I'm not designing, I love to crochet, play video games, and spoil my dog Peanut with park outings and pup-cups!</p>
+            <h1>Hey there!</h1>
+            <p>I’m Kassidy, a UX/UI designer based in Orange County, CA. I graduated from the UCI UX/UI Design Boot Camp program. Before entering the design field, I graduated from UCLA with a Biology B.S., with a pre-med focus. I am now transitioning from a career in health sciences to a career in tech and design. </p>
+            <p>I was previously interested in medicine due to my interest in helping others, but during the pandemic I reignited my creative spark and wanted to pursue a career that not only allowed me to help others, but to also create useful products. </p>
+            <p>When I'm not designing, I love to crochet, play video games, and spoil my dog Peanut with park outings and pup-cups!</p>
+            <p>Here is my <a href="https://drive.google.com/file/d/1Ky_oSqCa5I5t4T_uPhVkK18usQ5zlS6u/view?usp=sharing">resume</a>.</p>
         </div>
     </section>
 
     <section class="about-details">
         <div class="skills-and-interests">
             <h2>Skills & Interests</h2>
-            <p>With my former educational experience, I gained valuable skills in research, psychology, creative problem-solving, and building empathy. I pride myself on my natural curiosity and being a quick and open-minded learner. I am meticulous with even the smallest details and approach design with the intent to create simple and intuitive solutions to real user problems.</p>
+            <p>I approach design with the intent to create simplified and intuitive products, and solve actual user problems. Because of this, I focus on the research and testing phases of the design process. I also like to keep accessibility in mind and ensure my designs are inclusive to all users.</p>
+            <p>With my former educational experience, I gained valuable skills in research, understanding human behavior, creative problem-solving. I am naturally empathetic, curious, meticulous, and am a quick learner.</p>
+            <p>I am interested in designing intuitive interfaces for health tech and solve problems for patients and providers alike. I'm also interested in exploring how AI can be used as a design tool to create more user-friendly experiences.</p>
         </div>
         <div class="education">
             <h2>Education</h2>
@@ -52,25 +58,41 @@
         </div>
     </section>
 
+<!--
     <section class="contact-info">
         <h2>Check out my <a href="https://drive.google.com/file/d/1Ky_oSqCa5I5t4T_uPhVkK18usQ5zlS6u/view?usp=sharing">resume</a>!</h2>
         <h2><a href="mailto:kassidytran@gmail.com">kassidytran@gmail.com</a></h2>
     </section>
+-->
 
-    <!--
     <section class="about-more">
-        <h2>A few of my favorite things...</h2>
-        <div>
-            <img>
+        <h2>A few of my favorite things!</h2>
+        <div class="grid-container">
+            <img class="grid-img-1" src="media/about/peanut.png">
+            <img class="grid-img-2" src="media/about/museum.png">
+            <img class="grid-img-3" src="media/about/travel.png">
+            <img class="grid-img-4" src="media/about/acnh.png">
+            <div class="grid-text-1">
+                <h3>🎾 My dog Peanut</h3>
+                <p>She may be big for a dog named Peanut, but she's a total ball-obsessed sweetie. We attend obedience and agility training on weekends! </p>
+            </div>
+            <div class="grid-text-2">
+                <h3>🖼️ Museums</h3>
+                <p>I love exploring museums and learning more about history, science, and art!</p>
+            </div>
+            <div class="grid-text-3">
+                <h3>✈️ Traveling</h3>
+                <p>I love exploring new sights, cultures, and cuisines when I can. Here's a photo of me during my recent trip to Japan!</p>
+                <p>My favorite spots visited so far: Kyoto, Kauai, Yellowstone National Park</p>
+            </div>
+            <div class="grid-text-4">
+                <h3>🎮 Video games</h3>
+                <p>On my free time I dabble in video games.</p>
+                <p>Currently playing: Animal Crossing, Omori, and Genshin Impact.</p>
+            </div>
         </div>
+
     </section>
-    -->
-    
-
-    
-
-
-
 
 
     <footer>
@@ -80,5 +102,6 @@
             <li><a href="https://www.linkedin.com/in/kassidy-tran/">LinkedIn</a></li>
         </ul>
     </footer>
+
 </body>
 </html>
