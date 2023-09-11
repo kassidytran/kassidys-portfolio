@@ -50,6 +50,7 @@ header nav .brand {
   font-weight: 500;
 }
 header nav ul {
+  padding-left: 0;
   margin-bottom: 20px;
   list-style: none;
   display: flex;
@@ -448,7 +449,7 @@ article .cs-section-b .embed iframe {
 /*******************************************************/
 footer {
   background-color: #fafafa;
-  padding: 50px 100px 100px 60px;
+  padding: 60px 100px;
   display: flex;
   flex-flow: column;
   justify-content: center;
@@ -465,6 +466,7 @@ footer ul {
 footer ul li {
   padding: 12px 20px;
   display: inline-block;
+  margin: 0;
 }
 footer ul a {
   color: #033962;
@@ -669,5 +671,126 @@ footer ul a:hover {
   }
   article .cs-section-b .embed {
     max-width: 100%;
+  }
+}
+@media (max-width: 720px) {
+  header {
+    padding: 10px 30px;
+  }
+  header nav {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+  }
+  header nav .brand {
+    margin-right: 0px;
+  }
+  header nav ul {
+    justify-content: center;
+  }
+}
+@media (max-width: 480px) {
+  header {
+    padding: 10px 30px;
+  }
+  header nav {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+  }
+  header nav .brand {
+    margin-right: 0px;
+    margin-top: 20px;
+  }
+  header nav ul {
+    margin-top: 0;
+    justify-content: center;
+    flex-flow: column;
+  }
+  header nav ul li {
+    margin: 12px 0px;
+  }
+  .intro-container {
+    padding: 60px 50px;
+  }
+  .intro-container h1 {
+    font-size: 32px;
+  }
+  .intro-container h2 {
+    font-size: 20px;
+  }
+  .intro-container p {
+    font-size: 16px;
+  }
+  .work-container {
+    padding: 60px 50px;
+  }
+  .about-intro {
+    padding: 60px 50px;
+  }
+  .about-intro h1 {
+    font-size: 32px;
+  }
+  .about-intro p {
+    font-size: 16px;
+  }
+  .about-details {
+    padding: 60px 50px;
+  }
+  .about-details p {
+    font-size: 16px;
+  }
+  .about-more {
+    padding: 60px 50px;
+  }
+  .about-more .grid-container p {
+    font-size: 16px;
+  }
+  article h1 {
+    font-size: 32px;
+  }
+  article h2 {
+    font-size: 20px;
+  }
+  article .cs-title {
+    padding: 60px 50px;
+  }
+  article .cs-title .cs-title-details p {
+    font-size: 14px;
+  }
+  article .yelp-cover-img {
+    padding: 60px 50px;
+    gap: 20px;
+  }
+  article .uinv-cover-img {
+    padding: 60px 50px;
+  }
+  article .cs-overview {
+    padding: 60px 50px;
+  }
+  article .cs-overview .cs-details-container {
+    flex-flow: column;
+  }
+  article .cs-section-a {
+    padding: 60px 50px;
+  }
+  article .cs-section-a .problem-statement {
+    font-size: 20px;
+    line-height: 30px;
+  }
+  article .cs-section-a .comparisons-container {
+    flex-flow: column;
+  }
+  article .cs-section-b {
+    padding: 60px 50px;
+  }
+  footer {
+    padding: 30px 50px;
+  }
+  footer h2 {
+    font-size: 28px;
+  }
+  footer ul {
+    margin-bottom: 50px;
   }
 }/*# sourceMappingURL=styles.css.map */
